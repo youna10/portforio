@@ -107,7 +107,7 @@ html{
 }
 .middle1 h2{
     font-family: var(--font-korea),serif;
-    margin: 50px;
+    margin: 0px 50px;
     font-size: var(--font-big);
     color: var(--font-color);
     animation: backgroundh2 1.3s ease-in-out;
