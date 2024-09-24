@@ -1,0 +1,198 @@
+@media screen and (max-width:988px) {
+    html{
+        height: 100vh;
+        scroll-snap-type:none
+    }
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 0;
+    }
+   .index_all{
+        display: none;
+        width: 100%;        
+   }
+   .index_allul{ 
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+    .index_allul li{
+        width: 100%;
+        padding: 8px 5px;
+    }
+    .tooglebtn{
+        display: block;
+    }
+    .index_all.active{
+        display: flex
+    }
+    .index_project:hover .index_hidden{
+        display: none;
+    }
+    .background h2{
+        font-size: 3rem;
+    }
+    .contenth2{
+        margin-top: auto;
+    }
+    .profile{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .profile img{
+        width: 160px;
+        height: 180px;
+    }
+    .main_background{
+        display: none;
+    }
+    .alram_main,
+    .onclick_main{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .smartperfume_main{
+        align-items: start;
+        flex-direction: column;
+    }
+    .viewbtn,.button1,.button2{
+        display: none;
+    }
+    .viewbtn_media{
+        display: flex;
+        padding: 7px 20px;
+        background:rgb(248, 248, 255, 0.7)  ;
+        border-radius: 10px;
+        font-weight: 300;
+        color: black;
+        border: 1px solid rgb(248, 248, 255);
+        box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
+        font-size: var(--font-small);
+        position: relative;
+        right: 27%;
+    }
+    .smartperfumeimg img{
+        width: 100px;
+        height: 180px;
+    }
+    .perfumemin{
+        display: none;
+    }
+    .app2 .perfumemax{
+        display: flex;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.mouse {
+    padding-top: 60px;
+  }
+.mouse span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+  .mouse span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sdb 2s infinite;
+    animation: sdb 2s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .iconmouse {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    width: 30px;
+    height: 50px;
+    border: 2px solid #6a6868;
+    border-radius: 20px;
+}
+@keyframes Mouse_act {
+    0% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+.iconmouse::before {
+    content: "SCROLL";
+    display: block;
+    position: absolute;
+    top: 53px;
+    left: 50%;
+    margin-left: -29px;
+    width: 60px;
+    font-size: 16px;
+    color: #6a6868;
+    letter-spacing: 0px;
+    font-weight: 600;
+}
+.iconmouse .ball {
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    width: 4px;
+    height: 4px;
+    background: #6a6868;
+    border-radius: 50%;
+    animation: Mouse_act 1s ease-out infinite;
+}
