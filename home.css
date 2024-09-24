@@ -640,3 +640,9 @@ hr{
     text-align: center;
     justify-content: center;
 }
+.contact_id p{
+    color: var(--font-color);
+}
+.contact_git a{
+    color: var(--font-color);
+}
