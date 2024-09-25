@@ -1,37 +1,38 @@
 @media screen and (max-width:988px) {
-    html{
-        height: 100vh;
-        scroll-snap-type:none
-    }
-    header{
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 5px 0;
-    }
-   .index_all{
-        display: none;
-        width: 100%;        
-   }
-   .index_allul{ 
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+    .headertop{
+        background: var(--font-white);
         width: 100%;
-    }
-    .index_allul li{
-        width: 100%;
-        padding: 8px 5px;
+        position: fixed;
+        z-index: 999;
     }
     .tooglebtn{
-        display: block;
+        display: flex;
     }
-    .index_all.active{
-        display: flex
+    .index_all{
+        height: 100%;
     }
-    .index_project:hover .index_hidden{
-        display: none;
+   .index_allul{
+        position: absolute;
+        flex-direction: column;
+        text-align: center;
+        top:70px;
+        right: -250px;
+        width:240px;
+        height:100vh;
+        background-color:var( --font-subsubcolor);
+        transition: all 0.3s ease-in-out;
+        z-index: 50;
+        padding-top: 10px;
+        padding-bottom: 10px;
+   }
+   .index_allul.active{
+        right: 0;
+   }
+   .index_project:hover .index_hidden{
+         display: none;
     }
-    .background h2{
+
+    .middle1 h2{
         font-size: 3rem;
     }
     .contenth2{
@@ -89,6 +90,7 @@
     }
 }
 
+/*mouse scroll css*/
 .mouse {
     padding-top: 60px;
   }

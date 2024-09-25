@@ -35,7 +35,6 @@ html{
     justify-content: space-between;
 }
 .index_all{
-     
     margin-right: 350px;
     z-index: 100;
 }
@@ -69,7 +68,6 @@ html{
     
 }
 .index_project .index_hidden li{
- 
     margin-left: 30px;
     padding-bottom: 6px;
     font-size: var(--font-btn);
@@ -204,7 +202,7 @@ html{
   }*/
 
   /*profile*/
-.sectionprofile{
+#sectionprofile{
     height: 100vh;
  
 }

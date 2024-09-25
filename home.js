@@ -1,26 +1,27 @@
 /* max 토글버튼 생성*/
 const togglebtn =document.querySelector('.tooglebtn');
- const navs = document.querySelector('.index_all');
+ const navs = document.querySelector('.index_allul');
  
  togglebtn.addEventListener('click',() =>{
     navs.classList.toggle('active');
  });
 
- const id = document.querySelectorAll(".background");
+ 
+ const id = document.querySelectorAll(".hedermiddle");
 
  const ids = new IntersectionObserver((entries, observer) => {
    entries.forEach((entry) => {
      if (entry.isIntersecting) {
-       entry.target.classList.add("backgroundh2");
+       entry.target.classList.add("middle1");
      } else {
-       entry.target.classList.remove("backgroundh2");
+       entry.target.classList.remove("middle1");
      }
    });
  });
  
- id.forEach((background) => {ids.observe(background);
+ id.forEach((hedermiddle) => {ids.observe(hedermiddle);
  });
- 
+
  /* 해당 영역이 보일 때 나타내기*/
 const contents = document.querySelectorAll(".content");
 
