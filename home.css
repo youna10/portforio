@@ -10,9 +10,9 @@
     --text:5rem;
     --subtext:23px;
     --font-color:#6c6b69;
-    --font-subcolor:#0b0b0b;
-    --font-subsubcolor:#525252;
-    --font-white: #EEEEEE;
+    --font-subcolor:#0b0b0b ;
+    --font-subsubcolor:#b6b5b1;
+    --font-white: #fcfcf7;
     --font-korea:"Noto Serif KR", serif;
 }
 *{
@@ -25,7 +25,7 @@
 }
 html{
     width: 100%;  
-    background: #fcfcf7;   
+    background: #F5F3EE;   
 }
 .headertop{
     box-shadow: 0px 2px 2px #999;
@@ -107,7 +107,7 @@ html{
 }
 .middle1 h2{
     font-family: var(--font-korea),serif;
-    margin: 0px 50px;
+    margin:0px 50px;
     font-size: var(--font-big);
     color: var(--font-color);
     animation: backgroundh2 1.3s ease-in-out;
@@ -244,7 +244,7 @@ html{
     gap: 50px 50px ;
 }
 .profile_all h2{
-    color: var(--font-color);
+    color: var(--font-subcolor);
 }
 .profile_all ul{
     list-style: none;
@@ -260,7 +260,7 @@ html{
     font-weight: 700;
 }
 .profile_all ul li p:nth-child(2){
-    color: var(--font-subcolor);
+    color: var(--font-color);
     display: flex;
     justify-content: right;
 }
@@ -280,7 +280,7 @@ html{
     box-sizing: border-box;
     height: 3px;
     width: 20px;
-   background-color: #6a6868;
+   background-color: var(--font-subcolor);
  }
  .null{
     box-sizing: border-box;
@@ -307,13 +307,16 @@ html{
     color: var(--font-color);
  }
 /*project start*/
+#start_A{
+    background: #363636;
+}
 .projectstart {
     display: block;
     height: 100vh;
 }
 .projectstarth1{
     font-size: var(--font-big);
-    color: var(--font-subcolor);
+    color: var(--font-white);
     opacity: 0;
     transform: translateY(100%);
 }
@@ -335,10 +338,10 @@ html{
     margin-top: 60vh;
 }
 .projectstarttitle li{
-    margin: 5px 0px;
+    margin: 5px 10px;
     list-style: none;
     font-size: var(--font-large);
-    color: var(--font-subsubcolor);
+    color: var(--font-white);
 }
 
  /*alram*/
@@ -388,13 +391,13 @@ html{
 }
 .alram_text h2{
     font-size: var(--font-large);
-    color: var(--font-color);
+    color: var(--font-subcolor);
     margin-bottom: 5px;
  
 }
 .alram_text p {
     font-size: var(--font-medium);
-    color: var(--font-subcolor);
+    color: var(--font-color);
     margin-bottom: 5px;
 }
 .alram_text ul{
@@ -409,12 +412,12 @@ html{
  
 .alram_subtext p:nth-child(1){
     font-size: var(--font-medium);
-    color: var(--font-subcolor);
+    color: var(--font-color);
     font-weight: 600;
 }
 .alram_subtext p:nth-child(2){
     font-size: var(--font-medium);
-    color: var(--font-subcolor);
+    color: var(--font-color);
     margin-left: 20px;
 }
 hr{
@@ -427,7 +430,7 @@ hr{
     padding: 6px 30px;
     border-radius: 10px;
     font-weight: 500;
-    color: var(--font-subsubcolor);
+    color: var(--font-subcolor);
     border: 1px solid#ebb76e;
     font-size: var(--font-btn);
     position: absolute;
@@ -453,7 +456,7 @@ hr{
     padding: 6px 30px;
     border-radius: 10px;
     font-weight: 500;
-    color: var(--font-subsubcolor);
+    color: var(--font-subcolor);
     border: 1px solid #d37f76ee;
     font-size: var(--font-btn);
     z-index: 4;
@@ -472,8 +475,8 @@ hr{
     background:#857d7cee ;
     padding: 6px 30px;
     border-radius: 10px;
-    font-weight: 500;
-    color: var(--font-subsubcolor);
+    font-weight: 600;
+    color: var(--font-subcolor);
     border: 1px solid #857d7cee;
     font-size: var(--font-btn);
     z-index: 4;
@@ -514,12 +517,12 @@ hr{
 }
 .oneclcik_text h2{
     font-size: var(--font-large);
-    color: var(--font-color);
+    color: var(--font-subcolor);
     margin-bottom: 5px;
 }
 .oneclcik_text p {
     font-size: var(--font-medium);
-    color: var(--font-subcolor);
+    color: var(--font-color);
     margin-bottom: 5px;
 }
 .appimg img{
@@ -541,25 +544,17 @@ hr{
 }
 .oneclcik_subtext p:nth-child(1){
     font-size: var(--font-medium);
-    color: var(--font-subcolor);
+    color: var(--font-color);
     font-weight: 600;
 }
 .oneclcik_subtext p:nth-child(2){
     font-size: var(--font-medium);
-    color: var(--font-subcolor);
+    color: var(--font-color);
     margin-left: 20px;
 }
 
 /*smartperfume css*/
 
-.title1 h2{
-    position: absolute;
-    margin-top: 90px;
-    z-index: 5;
-    font-size: 3rem;
-    color: var(--font-subsubcolor);
-}
- 
 .section6{
     display: flex;
     justify-content: center;
@@ -594,12 +589,12 @@ hr{
 }
 .smartperfume_text h2{
     font-size: var(--font-large);
-    color: var(--font-color);
+    color: var(--font-subcolor);
     margin-bottom: 5px;
 }
 .smartperfume_text p {
     font-size: var(--font-medium);
-    color: var(--font-subcolor);
+    color: var(--font-color);
     margin-bottom: 5px;
 }
 .smartperfume_subtext{
@@ -614,12 +609,12 @@ hr{
 }
 .smartperfume_subtext p:nth-child(1){
     font-size: var(--font-medium);
-    color: var(--font-subcolor);
+    color: var(--font-color);
     font-weight: 600;
 }
 .smartperfume_subtext p:nth-child(2){
     font-size: var(--font-medium);
-    color: var(--font-subcolor);
+    color: var(--font-color);
     margin-left: 20px;
 }
 /* contact */
