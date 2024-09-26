@@ -50,18 +50,37 @@
     .main_background{
         display: none;
     }
+    #start_A{
+        margin-top: 100px;
+    }
+    .button0,
+    .button1,
+    .button2{
+        display: none;
+    }
     .alram_main,
     .onclick_main{
+
         flex-direction: column;
         align-items: center;
-        padding-bottom: 50px;
+    }
+    .alramimg img{
+        width: 250px;
+        height: 150px;
+    }
+    .section5{
+     padding: 50px;
+    }
+    .onclick_main{
+        padding-top: 50px;
+        border: 2px solid salmon;
+    }
+    .oneclcikimg img{
+      display: none;
     }
     .smartperfume_main{
         align-items: start;
         flex-direction: column;
-    }
-    .viewbtn,.button1,.button2{
-        display: none;
     }
     .viewbtn_media{
         display: flex;
@@ -73,9 +92,9 @@
         border: 1px solid rgb(248, 248, 255);
         box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
         font-size: var(--font-small);
-        position: relative;
-        right: 27%;
+  
     }
+
     .smartperfumeimg img{
         width: 100px;
         height: 180px;

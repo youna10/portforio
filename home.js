@@ -79,7 +79,7 @@ const io = new IntersectionObserver((entries, observer) => {
   });                            
 },ios);
 
-document.querySelectorAll('.alram_main').forEach((alram_main) => io.observe(alram_main));
+document.querySelectorAll('.section4').forEach((section4) => io.observe(section4));
 
 //
 const mains = new IntersectionObserver((entries, observer) => {
@@ -91,7 +91,9 @@ const mains = new IntersectionObserver((entries, observer) => {
     }
   });                            
 },ios);
-document.querySelectorAll('.onclick_main').forEach((onclick_main) => mains.observe(onclick_main));
+
+document.querySelectorAll('.section5').forEach((section5) => mains.observe(section5));
+
 
 const mains2 = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
@@ -103,8 +105,8 @@ const mains2 = new IntersectionObserver((entries, observer) => {
   });                            
 },ios);
 
-document.querySelectorAll('.smartperfume_main').forEach((smartperfume_main) =>
-   mains2.observe(smartperfume_main));
+document.querySelectorAll('.section6').forEach((section6) =>
+   mains2.observe(section6));
 //
 
 //project start
