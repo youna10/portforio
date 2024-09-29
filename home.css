@@ -3,7 +3,7 @@
 :root{
     --background-color1:rgba(255,255,255);
     --font-small:13px;
-    --font-btn:14.5px;
+    --font-btn:15px;
     --font-medium:18px;
     --font-large:25px;
     --font-big:6.5rem;
@@ -179,7 +179,6 @@ html{
     transform: translateY(0);
 }
 .dd {
-
 	position:fixed;
 	bottom:30px;
 	right:30px;
@@ -278,7 +277,7 @@ html{
     box-sizing: border-box;
     height: 3px;
     width: 20px;
-   background-color: var(--font-subcolor);
+    background-color: var(--font-subcolor);
  }
  .null{
     box-sizing: border-box;
@@ -420,7 +419,7 @@ hr{
 .button0{
     margin-top: 10px;
     background:#ebb76e;
-    padding: 6px 30px;
+    padding: 7px 30px;
     border-radius: 10px;
     font-weight: 500;
     color: var(--font-subcolor);
@@ -429,6 +428,7 @@ hr{
     z-index: 4;
     cursor: pointer;
     letter-spacing: 3px;
+    box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
 
 }
 .button0:hover{
@@ -499,15 +499,15 @@ hr{
 .button1{
     background:#d37f76ee;
     margin-top: 10px;
-    padding: 6px 30px;
+    padding: 7px 30px;
     border-radius: 10px;
-    font-weight: 500;
     color: var(--font-subcolor);
     border: 1px solid #d37f76ee;
     font-size: var(--font-btn);
     z-index: 4;
     cursor: pointer;
     letter-spacing: 3px; /*문자간격*/
+    box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
 }
 .button1:hover{
     background: #c25b50ee ;
@@ -572,8 +572,9 @@ hr{
 }
 
 .button2{
+    margin-top: 10px;
     background:#857d7cee ;
-    padding: 6px 30px;
+    padding: 7px 30px;
     border-radius: 10px;
     color: var(--font-subcolor);
     border: 1px solid #857d7cee;
@@ -581,6 +582,7 @@ hr{
     z-index: 4;
     cursor: pointer;
     letter-spacing: 3px;
+    box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
 }
 .button2:hover{
     background: #6b6665ee ;

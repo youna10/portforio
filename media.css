@@ -1,3 +1,9 @@
+:root{
+    --media-small:12px;
+    --media-medium:15px;
+    --media-large:20px;
+}
+
 @media screen and (max-width:988px) {
     .headertop{
         background: var(--font-white);
@@ -35,77 +41,152 @@
     .middle1 h2{
         font-size: 3rem;
     }
+    .plan_all{
+        margin-top: 150px;
+    }
     .contenth2{
         margin-top: auto;
+        font-size: 3rem;
+    }
+    .content_p{
+        font-size: var(--media-large);
     }
     .profile{
         flex-direction: column;
         align-items: center;
-        margin-bottom: 100px;
+ 
     }
     .profile img{
         width: 160px;
         height: 180px;
     }
-    .main_background{
-        display: none;
-    }
     #start_A{
         margin-top: 100px;
     }
+    .profile_all{
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 70px 50px;
+        border-radius: 30px; 
+        display: grid;
+        grid-template-columns: 200px 240px;
+        grid-template-rows: 90px 90px;
+        gap: 40px 40px ;
+    }
+    .profile_all ul li p:nth-child(1){
+        color: var(--font-color);
+        font-size: var(--media-medium);
+        font-weight: 700;
+    }
+    .profile_all ul li p:nth-child(2){
+        color: var(--font-color);
+        display: flex;
+        justify-content: right;
+    }
+    .skills ul li p:nth-child(2){
+    margin-right: 0px;
+     }
+    /*project css*/
     .button0,
     .button1,
     .button2{
+
         display: none;
     }
-    .alram_main,
-    .onclick_main{
-
-        flex-direction: column;
-        align-items: center;
+    .sectionproject{
+        height: 75vh;
     }
-    .alramimg img{
+    .section4,
+    .section5,
+    .section6{
+        flex-direction: column;
+    }
+    .alramimg img {
         width: 250px;
         height: 150px;
     }
-    .section5{
-     padding: 50px;
-    }
-    .onclick_main{
-        padding-top: 50px;
-        border: 2px solid salmon;
-    }
-    .oneclcikimg img{
-      display: none;
-    }
-    .smartperfume_main{
-        align-items: start;
-        flex-direction: column;
-    }
-    .viewbtn_media{
-        display: flex;
-        padding: 7px 20px;
-        background:rgb(248, 248, 255, 0.7)  ;
-        border-radius: 10px;
-        font-weight: 300;
-        color: black;
-        border: 1px solid rgb(248, 248, 255);
-        box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
-        font-size: var(--font-small);
-  
-    }
-
-    .smartperfumeimg img{
+    .phoneimg{
         width: 100px;
         height: 180px;
     }
-    .perfumemin{
-        display: none;
+    .oneappimg{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left: 53%;
+        margin-top: 120px;
     }
-    .app2 .perfumemax{
-        display: flex;
+    .phoneimg2{
         width: 100px;
-        height: 100px;
+        height: 180px;
+    }
+    .oneclcikmaintext,
+    .smartperfumemaintetext{
+        margin-right: 150px;
+    }
+    .perfumeapp{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left: 53%;
+        margin-top: 120px;
+    }
+    .viewbtn_media{
+        display: flex;
+        padding: 7px 50px;
+        border-radius: 10px;
+        font-weight: 500;
+        color: var(--font-subcolor);
+        background:#ebb76e;
+        border: 1px solid#ebb76e;
+        font-size: var(--font-btn);
+        z-index: 4;
+        cursor: pointer;
+        letter-spacing: 3px;
+        box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
+ 
+    }
+    .viewbtn_media:hover{
+        background: #e6b980;
+        border: 1px solid#e6b980;
+        color: var(--font-white);
+    }
+    .viewbtn_media1{
+        display: flex;
+        background:#d37f76ee;
+        padding: 7px 50px;
+        border-radius: 10px;
+        font-weight: 500;
+        color: var(--font-subcolor);
+        border: 1px solid #d37f76ee;
+        font-size: var(--font-btn);
+        z-index: 4;
+        cursor: pointer;
+        letter-spacing: 3px; /*문자간격*/
+        box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
+    }
+    .viewbtn_media1:hover{
+        background: #c25b50ee ;
+        border: 1px solid#c25b50ee ;
+        color: var(--font-white);
+    }
+    .viewbtn_media2{
+        display: flex;
+        background:#857d7cee ;
+        padding: 7px 50px;
+        border-radius: 10px;
+        font-weight: 500;
+        color: var(--font-subcolor);
+        border: 1px solid #857d7cee;
+        font-size: var(--font-btn);
+        z-index: 4;
+        cursor: pointer;
+        letter-spacing: 3px; /*문자간격*/
+        box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
+    }
+    .viewbtn_media2:hover{
+        background: #6b6665ee ;
+        border: 1px solid#6b6665ee ;
+        color: var(--font-white);
     }
 }
 
