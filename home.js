@@ -1,6 +1,6 @@
 /* max 토글버튼 생성*/
 const togglebtn =document.querySelector('.tooglebtn');
- const navs = document.querySelector('.index_allul');
+ const navs = document.querySelector('.index_all');
  
  togglebtn.addEventListener('click',() =>{
     navs.classList.toggle('active');

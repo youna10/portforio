@@ -12,32 +12,40 @@
         z-index: 999;
     }
     .tooglebtn{
+        cursor: pointer;
         display: flex;
     }
     .index_all{
-        height: 100%;
+        position: absolute;
+        top:68px;
+        display: none;
+        width:100%;
+        height:30vh;
+        background-color:var( --font-white) ;
+        z-index: 50;      
     }
    .index_allul{
-        position: absolute;
         flex-direction: column;
         text-align: center;
-        top:70px;
-        right: -250px;
-        width:240px;
-        height:100vh;
-        background-color:var( --font-subsubcolor);
-        transition: all 0.3s ease-in-out;
-        z-index: 50;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        align-items: center;
+        width: 100%;
    }
-   .index_allul.active{
-        right: 0;
+   .index_allul li{
+        width: 100%;
+   }
+   .index_allul li:hover{   
+        background-color: var(--font-subsubcolor);
+   }
+   .index_allul li a:hover{
+        text-decoration: none;
+   }
+   .index_all.active{
+        display: block;
    }
    .index_project:hover .index_hidden{
          display: none;
     }
-
+  
     .middle1 h2{
         font-size: 3rem;
     }
@@ -187,6 +195,32 @@
         background: #6b6665ee ;
         border: 1px solid#6b6665ee ;
         color: var(--font-white);
+    }
+    .sub_alram{
+        margin-top: 100px;
+        margin-bottom: 100px;
+      
+    }
+    .alram_search1img img,
+    .alram_search2img img,
+    .alram_search3img img{
+        width: 300px;
+    }
+    .alramtaskflow{
+        margin-top: 500px;
+    }
+    .alramtaskflowimg img{ 
+        position: static;
+        width: 450px;
+        height: 400px;
+    }
+ 
+    .alram_finalimg img{
+        position: static;
+        margin-top: 15px;
+        margin-left: -120px;
+        width: 450px;
+        height: 400px;
     }
 }
 
