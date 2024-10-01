@@ -101,13 +101,16 @@
         display: none;
     }
     .sectionproject{
-        height: 75vh;
+        height: 80vh;
     }
     .section4,
     .section5,
     .section6{
         flex-direction: column;
-    }
+        top: 10%;
+     }
+   
+
     .alramimg img {
         width: 250px;
         height: 150px;
