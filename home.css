@@ -1,5 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family:"Noto Sans KR", sans-serif ;
+    src: url(".\font\NotoSansKR-VariableFont_wght.ttf")  format("ttf"); 
+    unicode-range: U+AC00-D7A3;
+}
+@font-face {
+    font-family: "Work Sans";
+    src: url(".\font\WorkSans-VariableFont_wght.ttf") format("ttf");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
 :root{
     --background-color1:rgba(255,255,255);
     --font-small:13px;
@@ -8,7 +18,7 @@
     --font-large:25px;
     --font-big:6.5rem;
     --text:5rem;
-    --subtext:23px;
+    --subtext:21.5px;
     --font-color:#6c6b69;
     --font-subcolor:#0b0b0b ;
     --font-subsubcolor:#b6b5b1;
@@ -26,6 +36,9 @@
 html{
     width: 100%;  
     background: #F5F3EE;   
+}
+body{
+    font-family:  "Noto Sans KR " ,"Work Sans" ;
 }
 .headertop{
     box-shadow: 0px 2px 2px #999;
@@ -60,6 +73,7 @@ html{
     width: 150px;
     position: absolute;
     padding-top: 5px;
+    padding-bottom: 5px;
     margin-top: 5px;
     margin-left:10px;
     background-color: #f5f4ef;
@@ -95,33 +109,45 @@ html{
     right: 32px;
     font-size: 30px;
 }
-.hedermiddle{
-    display: flex;
+.maincphoto{
+    margin: 0px 30px;
+    margin-top: 40px;
+
+}
+.mainchapter{
+  
     text-align: center;
-    justify-content: center;
     align-items: center;
-    height: 88vh;
+}
+.mainimg{
+    position: absolute;
+    top: 35%;
+    right: 37%
+}
+.hedermiddle{
+    position: relative;
+    margin: 0px 20px;
+    margin-top: 30%;
+    text-align: center;
+    align-items: center;
  
 }
-.middle1 h2{
-    font-family: var(--font-korea),serif;
-    margin:0px 50px;
+.middle1 {
+    opacity: 0;
+    transition: all 1s ease;
     font-size: var(--font-big);
     color: var(--font-color);
-    animation: backgroundh2 1.3s ease-in-out;
+  
 }
 .middle1:hover span{
     color: #0b0b0b;
     transition: all 0.5s ease-in;
 }
-@keyframes backgroundh2{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+.hedermiddle.show .middle1{
+    opacity: 1;
+ 
 }
+ 
 .topbtn{
     display: none;
     box-shadow: 2px 2px 2px #999 ;
@@ -145,12 +171,11 @@ html{
     height: 100vh;
 }
 .content{
-    padding-top: 20px;
     align-content: center;
+    margin-top: 100px;
 }
 .contenth2{
-    margin-top: 200px;
-    font-size: 5rem;
+    font-size: var(--text);
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -160,11 +185,10 @@ html{
 }
 .content_p{
     color: var(--font-subcolor);
-    margin-top: 30px;
-    padding: 0 105px;
-    font-size: 23px;
+    margin: 0 170px;
+    font-size:var(--subtext);
     display: flex;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     opacity: 0;
     transform: translateY(50px);
@@ -178,19 +202,7 @@ html{
     opacity: 1;
     transform: translateY(0);
 }
-.dd {
-	position:fixed;
-	bottom:30px;
-	right:30px;
-	z-index:999;
-	border:1px solid #ccc;
-	outline:none;
-	background-color:white;
-	color:#333;
-	cursor:pointer;
-	padding:15px 20px;
-	border-radius:100%;
-}
+
 /*@keyframes reveal {
     0% {
       transform: translateY(100%);
@@ -211,8 +223,11 @@ html{
 .profile_title p{
     margin-left: 20px;
     margin-bottom: 20px;
+    color: var(--font-color);
+    font-size: var(--font-medium);
 }
 .profile_title h2{
+    color: var(--font-subcolor);
     margin-left: 20px;
     margin-bottom: 5px;    
     font-size: 2rem;
@@ -226,12 +241,13 @@ html{
 .profile img{
     margin: 0 50px;
     margin-top: 50px;
-    width: 280px;
-    height: 300px;
+    width: 290px;
+    height: 310px;
  
 }
 .profile_all{
     background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 3px 4px 2px #999 ;
     padding: 80px 50px;
     border-radius: 30px;
     margin: 0 50px;
@@ -317,6 +333,7 @@ html{
     color: var(--font-white);
     opacity: 0;
     transform: translateY(100%);
+    text-shadow: 5px 5px 3px #999;
 }
 .projectstart.show .projectstarth1{
     display: inline-block;
@@ -340,6 +357,7 @@ html{
     list-style: none;
     font-size: var(--font-large);
     color: var(--font-white);
+    text-shadow: 0px 1px 1px #999;
 }
 
  /*alram*/

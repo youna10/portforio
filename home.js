@@ -12,9 +12,9 @@ const togglebtn =document.querySelector('.tooglebtn');
  const ids = new IntersectionObserver((entries, observer) => {
    entries.forEach((entry) => {
      if (entry.isIntersecting) {
-       entry.target.classList.add("middle1");
+       entry.target.classList.add("show");
      } else {
-       entry.target.classList.remove("middle1");
+       entry.target.classList.remove("show");
      }
    });
  });
