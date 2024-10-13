@@ -45,12 +45,17 @@
    .index_project:hover .index_hidden{
          display: none;
     }
-  
-    .middle1 h2{
-        font-size: 3rem;
+    .mainchapter{
+        align-items: center;
+        padding-top: 50px;
     }
-    .plan_all{
-        margin-top: 150px;
+    .mainimg{
+        position: absolute;
+        right: 30%;
+    }
+    .middle1 {
+        font-size: 4.5rem;
+
     }
     .contenth2{
         margin-top: auto;
@@ -58,6 +63,9 @@
     }
     .content_p{
         font-size: var(--media-large);
+    }
+    .profile_title{
+        margin-top: 70px;
     }
     .profile{
         flex-direction: column;
@@ -94,12 +102,18 @@
     margin-right: 0px;
      }
     /*project css*/
+    .projectstarttitle{
+        display: block;
+        position: relative;
+        margin-top: 43% 
+    }
     .button0,
     .button1,
     .button2{
 
         display: none;
     }
+    
     .sectionproject{
         height: 80vh;
     }
