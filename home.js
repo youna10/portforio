@@ -80,6 +80,7 @@ $(document).ready(function() {
   });
   
 });
+
 window.addEventListener('DOMContentLoaded', function() {
   showContent('A');
   checkWindowSize(); // 초기 화면 크기 체크
@@ -91,7 +92,7 @@ window.addEventListener('resize', function() {
 });
 
 function checkWindowSize() {
-  if (window.innerWidth <= 950) {
+  if (window.innerWidth <= 1100) {
     // 화면 너비가 950px 이하일 때는 모든 콘텐츠 보이기
     document.getElementById("contentA").style.display = "flex";
     document.getElementById("contentB").style.display = "flex";
