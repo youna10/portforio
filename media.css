@@ -11,7 +11,7 @@
     --color-n4:#F4EDD3;
 }
 
-@media(max-width:995px) {
+@media(max-width:1100px) {
     .aboutme,
     #sectionprofile,
     #projectall,
@@ -36,10 +36,10 @@
         top: 0%;
         left: 0%;
         width: 100%;
-        height: 100vh;
+        height:100vh;
         display: none;
         z-index: 50;  
-        background: white;
+        background-color: white;
     }
     .close{
         display: flex;
@@ -55,10 +55,11 @@
     .index_all ul li{
         margin: 5px;
     }
+
    .index_allul{
         position: absolute;
         flex-direction: column;
-        top: 45%;
+        top: 32%;
         text-align: left;
    }
    .index_allul li{
@@ -170,6 +171,10 @@
     .alrammaintext,
     .oneclcikmaintext{
         display: none;
+    }
+    .mediatext,
+    .mediaprojecttext{
+        display: block;
     }
     .projectsubname{
         margin: 10px 10px;
@@ -492,21 +497,21 @@
         height: 400px;
         display: inline-block;
         overflow: hidden;
+        margin: 20px 0;
         
     }
     .designimg1,
     .designimg2{
         width: 300px;
+   
  
     }
-    .designtext{
-        margin-left: 19.5px;
-    }
+ 
  
 .designtext,
 .designtextb{
- 
     width: 90%;
+ 
     margin-left: 18px;
 }
 }
