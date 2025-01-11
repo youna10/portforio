@@ -2,7 +2,7 @@
 const togglebtn =document.querySelector('.tooglebtn');
 const navs = document.querySelector('.index_all');
 const closebtn = document.querySelector('.close')
- 
+const navLinks = document.querySelectorAll('.index_allul li a');
  togglebtn.addEventListener('click',() =>{
     navs.classList.toggle('active');
  });
@@ -10,7 +10,18 @@ const closebtn = document.querySelector('.close')
   navs.classList.remove('active');
 });
  
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); // 링크의 기본 동작 (페이지 이동) 방지
+    const targetSection = document.querySelector(link.getAttribute('href')); // 링크의 href에 해당하는 섹션
 
+    // 섹션으로 스크롤 애니메이션
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+
+    // 메뉴 닫기
+    navs.classList.remove('active');
+  });
+});
  
  /*해당 영역이 보일 때 나타나는 애니메이션*/ 
  const id = document.querySelectorAll(".abouttext");
