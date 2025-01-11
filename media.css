@@ -1,14 +1,30 @@
 :root{
-    --media-small:12px;
+    --media-title:1.5rem;
     --media-medium:15px;
     --media-large:20px;
+    --media-project:20px;
+    --media-projectsub:18px;
+    --media-projectsubsub:15px;
+    --color-n1:#4C585B;
+    --color-n2:#7E99A3;
+    --color-n3:#A5BFCC;
+    --color-n4:#F4EDD3;
 }
 
-@media screen and (max-width:988px) {
-    .headertop{
-        background: var(--font-white);
+@media(max-width:995px) {
+    .aboutme,
+    #sectionprofile,
+    #projectall,
+    #designall{
+        margin-left: 10px;
+    }
+    header{
         width: 100%;
+        top: 0;
+        background: rgb(255, 255, 255);
         position: fixed;
+        display: flex;
+        justify-content: space-between;
         z-index: 999;
     }
     .tooglebtn{
@@ -17,52 +33,91 @@
     }
     .index_all{
         position: absolute;
-        top:68px;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
         display: none;
-        width:100%;
-        height:30vh;
-        background-color:var( --font-white) ;
-        z-index: 50;      
+        z-index: 50;  
+        background: white;
+    }
+    .close{
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 32px;
+        font-size: 32px;
+        cursor: pointer;
+    }
+    .close:hover{
+        text-shadow: 0 3px 2px black;
+    }
+    .index_all ul li{
+        margin: 5px;
     }
    .index_allul{
+        position: absolute;
         flex-direction: column;
-        text-align: center;
-        align-items: center;
-        width: 100%;
+        top: 45%;
+        text-align: left;
    }
    .index_allul li{
-        width: 100%;
+        font-size: 3rem;
+        margin: 0;
+        padding: 0;
    }
+ 
    .index_allul li:hover{   
-        background-color: var(--font-subsubcolor);
-   }
-   .index_allul li a:hover{
-        text-decoration: none;
+        background:darkorange;
    }
    .index_all.active{
         display: block;
    }
-   .index_project:hover .index_hidden{
-         display: none;
+ 
+    .mainimg2 img{
+        margin-left: 25px;
+        width: 220px;
+        height: 200px;
     }
-    .mainchapter{
-        align-items: center;
-        padding-top: 50px;
+    .frist{
+        height: 90vh;
     }
-    .mainimg{
+     
+    .maintxt{
+        position: relative;
+        top: 100px;
+    
+    }
+    .maintxt p{
+        font-size: 5rem;
+        font-weight: 600;
+        color: var(--color-n1);
+        text-shadow: 0 3px 1px var(--color-n2);
+        }
+    .mainimg2{
         position: absolute;
-        right: 30%;
+        background: var(--color-n3);
+        padding-left: 10px;
+        border-radius: 100%;
+        transform: rotate(0deg);
+        box-shadow: 0px 5px 8px black;
+        top: 28%;
+        left: 62%;
+        width: 300px;
+        padding: 50px 0;
+        border-radius: 100%;
     }
-    .middle1 {
-        font-size: 4.5rem;
-
+ 
+    .about h3{
+        width: 54%;
+        font-size: var(--media-title);
     }
-    .contenth2{
-        margin-top: auto;
-        font-size: 3rem;
+    .abouttext{
+        display: block;
     }
-    .content_p{
-        font-size: var(--media-large);
+    .aboutsub{
+        margin-top: 50px;
+        margin-left: 10%;
     }
     .profile_title{
         margin-top: 70px;
@@ -76,17 +131,16 @@
         width: 160px;
         height: 180px;
     }
-    #start_A{
-        margin-top: 100px;
-    }
+   
     .profile_all{
         background-color: rgba(255, 255, 255, 0.6);
-        padding: 70px 50px;
+        box-shadow: 0 10px 10px black;
+        padding: 80px 50px;
         border-radius: 30px; 
         display: grid;
-        grid-template-columns: 200px 240px;
-        grid-template-rows: 90px 90px;
-        gap: 40px 40px ;
+        grid-template-columns: 200px 300px;
+        grid-template-rows: 120px 120px;
+        gap: 80px 80px ;
     }
     .profile_all ul li p:nth-child(1){
         color: var(--font-color);
@@ -101,144 +155,360 @@
     .skills ul li p:nth-child(2){
     margin-right: 0px;
      }
+     .skills ul li img{
+        margin: 0 10px;
+        width: 30px;
+        height: 30px;
+     }
     /*project css*/
-    .projectstarttitle{
-        display: block;
-        position: relative;
-        margin-top: 43% 
-    }
-    .button0,
-    .button1,
-    .button2{
-
+    .projectname{
         display: none;
     }
-    
-    .sectionproject{
-        height: 80vh;
+    .torridentextmain,
+    .homepagemaintetext,
+    .smartperfumemaintetext,
+    .alrammaintext,
+    .oneclcikmaintext{
+        display: none;
     }
-    .section4,
-    .section5,
-    .section6{
-        flex-direction: column;
-        top: 10%;
-     }
-   
-
-    .alramimg img {
-        width: 250px;
-        height: 150px;
+    .projectsubname{
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 기본적으로 두 개씩 배치 */
+        gap: 10px;
     }
-    .phoneimg{
-        width: 100px;
-        height: 180px;
+    #contentA .medimax2 .mediatext,
+    #contentB .medimax2 .mediatext{
+        margin-left: 13%;
     }
-    .oneappimg{
-        position: absolute;
-        width: 60px;
-        height: 60px;
-        left: 53%;
-        margin-top: 120px;
-    }
-    .phoneimg2{
-        width: 100px;
-        height: 180px;
-    }
-    .oneclcikmaintext,
-    .smartperfumemaintetext{
-        margin-right: 150px;
+    .torrideimg,
+    .homepageimg{
+        margin-left: 13%;
+        width: 350px;
+        height: 300px;
     }
     .perfumeapp{
+        position: static;
+        margin-left: 35px;
+        width: 250px;
+        height: 300px;
+    }
+    .alramimg {
+        position: static;
+        margin-left:25%;
+        width: 250px;
+        height: 300px;
+    }
+   
+    #contentC .medimax2 p{
+        padding-bottom: 35px;
+    }
+    .smartperfumemain{
+        margin-left: 25px;
+        width: 92%;
+        box-shadow: 0 3px 5px gray;
+    }
+    .alram_main{
+        margin-left: 25px;
+        width: 90%;
+        box-shadow: 0 3px 5px gray;
+    }
+    .medimax2{
+        padding: 20px 0;
+        margin: 30px 0;
+        background: rgb(255, 255, 255, 0.7);
+        border-radius: 30px;
+        box-shadow: 0px 3px 10px black;
+    }
+    .mediaprojecttext {
+        font-size: var(--media-large);
+        color: var(--color-n1);
+        margin: 30px 20px;
+    }
+    .mediaprojecttext h3{
+        margin: 10px;
+    }
+ 
+    .torridenmain,
+    .homepagemain,
+    .smartperfumemain,
+    .alram_main{
+        position: relative;
+        text-align: center;
+        display: inline-block;
+    }
+    .mediatext{
         position: absolute;
-        width: 60px;
-        height: 60px;
-        left: 53%;
-        margin-top: 120px;
-    }
-    .viewbtn_media{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+        color: white;
         display: flex;
-        padding: 7px 50px;
-        border-radius: 10px;
-        font-weight: 500;
-        color: var(--font-subcolor);
-        background:#ebb76e;
-        border: 1px solid#ebb76e;
-        font-size: var(--font-btn);
-        z-index: 4;
-        cursor: pointer;
-        letter-spacing: 3px;
-        box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        opacity: 0; /* 초기 상태에서 숨겨짐 */
+        transition: opacity 0.3s ease;
+    }
+    .torridenmain:hover .mediatext,
+    .homepagemain:hover .mediatext,
+    .smartperfumemain:hover .mediatext,
+    .alram_main:hover .mediatext,
+    .oneclcikimg:hover .mediatext{
+        opacity: 1;
+    }
+    .designtext{
+        margin-left: 19.5px;
+    }
+    
+}
+@media(max-width:600px) {
+
+    .mainimg2 img{
+        margin-left: 25px;
+        width: 150px;
+        height: 150px;
+    }
+    .frist{
+        height: 90vh;
+    }
+     
+    .maintxt{
+        position: relative;
+        top: 100px;
+    
+    }
+    .maintxt p{
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 600;
+        color: var(--color-n1);
+        text-shadow: 0 3px 1px var(--color-n2);
+        }
+    .mainimg2{
+        position: absolute;
+        background: none;
+        border-radius: 100%;
+        transform: rotate(0deg);
+        box-shadow:none;
+        top: 35%;
+        left: 49%;
+        width: 200px;
+        padding:auto;
+        margin-left: 10px;
+    }
+    
+    .about{
+        opacity: 1;
+        margin-top: 20px;
+        transform: none;
+        transition: all 0.5s ease-out;
+        
+    }
+    .about h3{
+        width: 54%;
+        font-size: 1.6rem;
+        color: var(--color-n2);
+        transform: none;
+    }
+    .aboutsub{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .aboutsub h3{
+        margin-left: 10px;
+        margin-bottom: 20px;
+        font-size: var(--font-projectsub);
+        color: var(--color-n1);
+    }
+    .aboutsub p{
+        font-size: var(--font-projectsubsub);
+        color: var(--color-n1);
+    }
+    .aboutsub1,
+    .aboutsub2{
+        background-color:var(--color-n3); 
+        border-radius: 50px; 
+        margin-bottom: 30px;
+        box-shadow: 0px 2px 5px;
+        padding: 20px;
+    }
+    .aboutsub1{
+        opacity: 1;
+        transition: all 0.6s ease-out;
+    }
+    .aboutsub2{
+        opacity: 1;
+        transition: all 0.3s ease-out;
+        animation-delay: 1s;
+    }
+    #sectionprofile{
+        margin: auto;
+    }
+    .profile_title{
+        margin-top: 70px;
+    }
+    .profile{
+        margin-top: 50px;
+        display: block;
+        align-items: center;
  
     }
-    .viewbtn_media:hover{
-        background: #e6b980;
-        border: 1px solid#e6b980;
-        color: var(--font-white);
+    .profile img{
+        margin-left: 30%;
+        width: 160px;
+        height: 180px;
     }
-    .viewbtn_media1{
+   
+    .profile_all{
+        border: solid var(--color-n3) 5px;
+        margin: auto;
+        padding: auto;
+        margin: 10px 30px;
+        border-radius: 30px; 
+        display: block;
+    }
+    .profile_all h2{
+      margin: 30px 0;
+    }
+    .profile_all ul li p:nth-child(1){
+        color: var(--font-color);
+        font-size: var(--media-medium);
+        font-weight: 700;
+        margin: 5px;
+    }
+    .profile_all ul li p:nth-child(2){
+        color: var(--font-color);
         display: flex;
-        background:#d37f76ee;
-        padding: 7px 50px;
-        border-radius: 10px;
-        font-weight: 500;
-        color: var(--font-subcolor);
-        border: 1px solid #d37f76ee;
-        font-size: var(--font-btn);
-        z-index: 4;
-        cursor: pointer;
-        letter-spacing: 3px; /*문자간격*/
-        box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
+        justify-content: right;
     }
-    .viewbtn_media1:hover{
-        background: #c25b50ee ;
-        border: 1px solid#c25b50ee ;
-        color: var(--font-white);
+    .skills ul li p:nth-child(2){
+    margin-right: 0px;
+     }
+     .skills ul li img{
+        margin: 0 10px;
+        width: 30px;
+        height: 30px;
+     }
+   
+    /*project css*/
+    .projectname{
+        display: none;
     }
-    .viewbtn_media2{
-        display: flex;
-        background:#857d7cee ;
-        padding: 7px 50px;
-        border-radius: 10px;
-        font-weight: 500;
-        color: var(--font-subcolor);
-        border: 1px solid #857d7cee;
-        font-size: var(--font-btn);
-        z-index: 4;
-        cursor: pointer;
-        letter-spacing: 3px; /*문자간격*/
-        box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
+    .torridentextmain,
+    .homepagemaintetext,
+    .smartperfumemaintetext,
+    .alrammaintext,
+    .oneclcikmaintext{
+        display: none;
     }
-    .viewbtn_media2:hover{
-        background: #6b6665ee ;
-        border: 1px solid#6b6665ee ;
-        color: var(--font-white);
+    .projectsubname{
+        margin: auto;
+        display: block;
+        margin: 0 20px;
     }
-    .sub_alram{
-        margin-top: 100px;
-        margin-bottom: 100px;
-      
+   
+    #contentB .medimax2 .mediatext{
+        margin: auto;
+        margin: 15px;
     }
-    .alram_search1img img,
-    .alram_search2img img,
-    .alram_search3img img{
+ 
+    .torrideimg{
         width: 300px;
-    }
-    .alramtaskflow{
-        margin-top: 500px;
-    }
-    .alramtaskflowimg img{ 
-        position: static;
-        width: 450px;
-        height: 400px;
+        height: 300px;
     }
  
-    .alram_finalimg img{
-        position: static;
-        margin-top: 15px;
-        margin-left: -120px;
-        width: 450px;
-        height: 400px;
+    .homepageimg{
+        margin: auto;
+        width: 300px;
+        height: 300px;
     }
+    
+    .smartperfumemain,
+    .homepagemain{
+        margin: auto;
+        width: 98%;
+        box-shadow:none;
+    }
+ 
+    .alram_main{
+        margin: auto;
+        width: 98%;
+        box-shadow:none;
+   
+    }
+    .perfumeapp{
+        position: static;
+        width: 250px;
+        height: 230px;
+        }
+    .alramimg {
+        position: static;
+        left: auto;
+        left: 13%;
+        width: 250px;
+        height: 230px;
+    }
+ 
+    .torridenmain{
+        margin-left: 30px;
+    }
+    .mediaprojecttext p{
+        font-size: var(--media-large);
+        color: var(--color-n1);
+        margin: 30px 20px;
+    }
+    .mediaprojecttext h3{
+        display: none;
+    }
+    .mediatext{
+        position: static;
+        background: none;
+        color: var(--color-n1);
+        justify-content: center;
+        align-items: center;
+        font-size:var(--media-large);
+        margin-bottom: 20px;
+        font-weight: bold;
+        opacity: 1; /* 초기 상태에서 숨겨짐 */
+        transition: opacity 0.3s ease;
+    }
+    .designimg ul{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        list-style: none;
+        height: auto;
+    
+         
+    }
+    .designimg ul li {
+    
+        position: relative;
+        height: 400px;
+        display: inline-block;
+        overflow: hidden;
+        
+    }
+    .designimg1,
+    .designimg2{
+        width: 300px;
+ 
+    }
+    .designtext{
+        margin-left: 19.5px;
+    }
+ 
+.designtext,
+.designtextb{
+ 
+    width: 90%;
+    margin-left: 18px;
+}
 }
 
 /*mouse scroll css*/
@@ -252,7 +522,7 @@
     width: 30px;
     height: 50px;
     margin-left: -15px;
-    border: 2px solid #fff;
+    border: 2px solid black;
     border-radius: 50px;
     box-sizing: border-box;
   }
@@ -264,7 +534,7 @@
     width: 6px;
     height: 6px;
     margin-left: -3px;
-    background-color: #fff;
+    background-color: black;
     border-radius: 100%;
     -webkit-animation: sdb 2s infinite;
     animation: sdb 2s infinite;
@@ -310,7 +580,7 @@
     z-index: 1;
     width: 30px;
     height: 50px;
-    border: 2px solid #6a6868;
+    border: 2px solid black;
     border-radius: 20px;
 }
 @keyframes Mouse_act {
@@ -335,7 +605,7 @@
     margin-left: -29px;
     width: 60px;
     font-size: 16px;
-    color: #6a6868;
+    color: black;
     letter-spacing: 0px;
     font-weight: 600;
 }
@@ -345,7 +615,7 @@
     left: 13px;
     width: 4px;
     height: 4px;
-    background: #6a6868;
+    background:black;
     border-radius: 50%;
     animation: Mouse_act 1s ease-out infinite;
 }
