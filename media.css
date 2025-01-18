@@ -11,7 +11,7 @@
     --color-n4:#F4EDD3;
 }
 
-@media(max-width:1100px) {
+@media(max-width:768px) {
     .aboutme,
     #sectionprofile,
     #projectall,
@@ -38,6 +38,7 @@
         width: 100%;
         height:100vh;
         display: none;
+        background-color: #A5BFCC;
         z-index: 50;  
         
     }
@@ -63,20 +64,20 @@
         text-align: left;
    }
    .index_allul li{
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin: 0;
         padding: 0;
    }
  
    .index_allul li:hover{   
-        background:darkorange;
+        color: var(--color-n2);
    }
    .index_all.active{
         display: block;
    }
  
     .mainimg2 img{
-        margin-left: 25px;
+        margin-left: 15px;
         width: 220px;
         height: 200px;
     }
@@ -102,11 +103,12 @@
         border-radius: 100%;
         transform: rotate(0deg);
         box-shadow: 0px 5px 8px black;
-        top: 28%;
+        top: 29%;
         left: 62%;
-        width: 300px;
-        padding: 50px 0;
+        width: 270px;
+        padding: 30px 0;
         border-radius: 100%;
+        
     }
  
     .about h3{
@@ -129,8 +131,9 @@
  
     }
     .profile img{
-        width: 160px;
-        height: 180px;
+        margin: 20px 0;
+        width: 200px;
+        height: 200px;
     }
    
     .profile_all{
@@ -175,22 +178,20 @@
     .mediatext,
     .mediaprojecttext{
         display: block;
+  
     }
     .projectsubname{
+ 
         margin: 10px 10px;
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 기본적으로 두 개씩 배치 */
         gap: 10px;
     }
-    #contentA .medimax2 .mediatext,
-    #contentB .medimax2 .mediatext{
-        margin-left: 13%;
-    }
     .torrideimg,
     .homepageimg{
-        margin-left: 13%;
-        width: 350px;
-        height: 300px;
+    
+        width: 250px;
+        height: 280px;
     }
     .perfumeapp{
         position: static;
@@ -202,20 +203,15 @@
         position: static;
         margin-left:25%;
         width: 250px;
-        height: 265px;
+        height: 260px;
     }
    
-    #contentC .medimax2 p{
-        padding-bottom: 35px;
-    }
     .smartperfumemain{
-        margin-left: 25px;
-        width: 92%;
         box-shadow: 0 3px 5px gray;
     }
     .alram_main{
-        margin-left: 25px;
-        width: 90%;
+    
+        padding-right: 20px;
         box-shadow: 0 3px 5px gray;
     }
     .medimax2{
@@ -228,19 +224,25 @@
     .mediaprojecttext {
         font-size: var(--media-large);
         color: var(--color-n1);
-        margin: 30px 20px;
+        margin: 30px 40px;
     }
     .mediaprojecttext h3{
-        margin: 10px;
+        margin: 10px 0;
     }
  
     .torridenmain,
     .homepagemain,
     .smartperfumemain,
-    .alram_main{
+    .alram_main{      
+        margin-left: 35px;
         position: relative;
         text-align: center;
         display: inline-block;
+    }
+    .torridenmain,
+    .homepagemain{
+        margin-left: 50px;
+       
     }
     .mediatext{
         position: absolute;
@@ -268,10 +270,36 @@
     .designtext{
         margin-left: 19.5px;
     }
+    .designimg{
+        margin-top: 30px;
+    }
+    .designtext,
+    .designtextb{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 94%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    color: var(--color-n4);
+    font-size: var(--font-projectsub);
+    opacity: 0;
+}
+    .designimg1,
+    .designimg2{
+ 
+    width: 320px;
+}
     
 }
-@media(max-width:600px) {
-
+@media(max-width:480px) {
+ 
     .mainimg2 img{
         margin-left: 25px;
         width: 150px;
@@ -300,7 +328,7 @@
         transform: rotate(0deg);
         box-shadow:none;
         top: 35%;
-        left: 49%;
+        left: 45%;
         width: 200px;
         padding:auto;
         margin-left: 10px;
@@ -414,54 +442,39 @@
     .projectsubname{
         margin: auto;
         display: block;
-        margin: 0 20px;
-    }
-   
-    #contentB .medimax2 .mediatext{
-        margin: auto;
-        margin: 15px;
-    }
+        margin: 0 10px;
+      
  
-    .torrideimg{
-        width: 300px;
-        height: 300px;
     }
- 
+    .torrideimg,
     .homepageimg{
-        margin: auto;
-        width: 300px;
+        width: 280px;
         height: 300px;
+        display: flex;  
     }
-    
+    .torridenmain,
     .smartperfumemain,
-    .homepagemain{
-        margin: auto;
-        width: 98%;
-        box-shadow:none;
-    }
- 
+    .homepagemain,
     .alram_main{
         margin: auto;
-        width: 98%;
-        box-shadow:none;
-   
+     
+        margin-left: 35px;       
     }
+ 
     .perfumeapp{
+   
         position: static;
         width: 250px;
         height: 230px;
+     
         }
     .alramimg {
         position: static;
-        left: auto;
-        left: 13%;
         width: 250px;
         height: 230px;
     }
  
-    .torridenmain{
-        margin-left: 30px;
-    }
+ 
     .mediaprojecttext p{
         font-size: var(--media-large);
         color: var(--color-n1);
@@ -511,8 +524,6 @@
 .designtext,
 .designtextb{
     width: 90%;
- 
-    margin-left: 18px;
 }
 }
 
