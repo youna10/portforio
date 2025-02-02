@@ -110,7 +110,11 @@
         border-radius: 100%;
         
     }
- 
+    .about{
+        opacity: 1;
+        transform:none;
+        margin-top: 20px;
+    }
     .about h3{
         width: 54%;
         font-size: var(--media-title);
@@ -121,6 +125,18 @@
     .aboutsub{
         margin-top: 50px;
         margin-left: 10%;
+    }
+    .aboutsub1{
+        opacity: 1;
+ 
+    }
+    .aboutsub2{
+        opacity: 1;
+        
+    }
+    .aboutsub3{
+        opacity: 1;
+        
     }
     .profile_title{
         margin-top: 70px;
@@ -221,6 +237,9 @@
         border-radius: 30px;
         box-shadow: 0px 3px 10px black;
     }
+    #contentC .medimax2{
+        padding-bottom: 45px;   
+    }
     .mediaprojecttext {
         font-size: var(--media-large);
         color: var(--color-n1);
@@ -238,11 +257,12 @@
         position: relative;
         text-align: center;
         display: inline-block;
+ 
     }
     .torridenmain,
     .homepagemain{
         margin-left: 50px;
-       
+      
     }
     .mediatext{
         position: absolute;
@@ -363,7 +383,8 @@
         color: var(--color-n1);
     }
     .aboutsub1,
-    .aboutsub2{
+    .aboutsub2,
+    .aboutsub3{
         background-color:var(--color-n3); 
         border-radius: 50px; 
         margin-bottom: 30px;
