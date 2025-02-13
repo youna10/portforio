@@ -34,7 +34,7 @@ navLinks.forEach(link => {
      if (entry.isIntersecting) {
        entry.target.classList.add("show");
      } else {
-       entry.target.classList.remove("show");
+        
      }
    });
  },abouts);
@@ -45,7 +45,7 @@ navLinks.forEach(link => {
 
  const sub = document.querySelectorAll(".aboutsub");
  const aboutsub = {
-  threshold:0.7
+  threshold:0.6
 };
 
  const subs = new IntersectionObserver((entries, observer) => {
@@ -53,7 +53,7 @@ navLinks.forEach(link => {
      if (entry.isIntersecting) {
        entry.target.classList.add("show");
      } else {
-       entry.target.classList.remove("show");
+       
      }
    });
  },aboutsub);
