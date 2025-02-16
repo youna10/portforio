@@ -110,7 +110,20 @@ body{
     padding: 30px 0;
     padding-left: 10px;
     border-radius: 100%;
-    transform: rotate(20deg);
+    transform: rotate(15deg);
+}
+.backgroundimg1  {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 330px;
+    width: 330px;
+} 
+.backgroundimg2  {
+    position: absolute;
+    top:17%;
+    height: 500px;
+    width: 500px;
 }
 /* header end*/
 
@@ -134,7 +147,7 @@ body{
 .topbtn i{
     color: var(--color-n1);
 }
- 
+
 
 /*about*/
 .aboutme{

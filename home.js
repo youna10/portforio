@@ -92,7 +92,7 @@ window.addEventListener('resize', function() {
 });
 
 function checkWindowSize() {
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 1194) {
     // 화면 너비가 950px 이하일 때는 모든 콘텐츠 보이기
     document.getElementById("contentA").style.display = "flex";
     document.getElementById("contentB").style.display = "flex";
