@@ -37,6 +37,8 @@ html{
     }
 body{
     font-family:  "NEXON Lv1 Gothic OTF";
+    cursor: default;
+    caret-color: transparent;
 }
 /* header*/
 
