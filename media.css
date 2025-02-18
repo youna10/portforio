@@ -83,7 +83,7 @@
      
     .maintxt{
         position: relative;
-        margin-top: 130px;
+        margin-top: 170px;
     }
     .maintxt p{
         font-size:7rem;
@@ -110,14 +110,14 @@
     }
     .backgroundimg1  {
         position: absolute;
-        top: 10%;
+        top: 12%;
         right: 0%;
-        height: 300px;
-        width: 300px;
+        height: 320px;
+        width: 320px;
     } 
     .backgroundimg2{
         position: absolute;
-        top:27%;
+        top:30%;
         height: 500px;
         width: 500px;
     }
