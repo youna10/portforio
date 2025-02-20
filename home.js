@@ -255,3 +255,19 @@ function showContent(content) {
     modalContentContainer.scrollTop = 0; // 모달이 닫혔을 때 스크롤을 맨 위로 설정
   }
 });
+
+document.getElementById('copyText').addEventListener('click', function() {
+  // 텍스트 영역 생성
+  const text = document.getElementById('copyText').innerText;
+  
+  // 임시 텍스트 영역 생성
+  const textarea = document.createElement('textarea');
+  textarea.value = text;
+  document.body.appendChild(textarea);
+  textarea.select(); // 텍스트 선택
+  document.execCommand('copy'); // 텍스트 복사
+  document.body.removeChild(textarea); // 임시 텍스트 영역 삭제
+  
+  // 복사 완료 메시지
+  alert('텍스트가 복사되었습니다!');
+});
