@@ -61,7 +61,7 @@
     </section>
 
 <section class="aboutme">
-    <h2 class="abouttitle">About Me</h2>
+    <h3 class="abouttitle">About Me</h3>
     <div class="abouttext"> 
     <div class="about">
         <h3>안녕하세요 물처럼 유연하게 대처하고 강인한 사람 지유나입니다.</h3>
@@ -92,11 +92,11 @@
  
 <section id="sectionprofile">
     <div class="profile_title">
-        <h2>About Me</h2>
+        <h3>a little about me</h3>
         <p>Information</p>
     </div>
     <div class="profile">
-        <div><img  class="profileimg"  src="\img\profile.jpg" alt=""></div>
+        <div class="myimg"><img  class="profileimg"  src="\img\profile.jpg" alt=""></div>
         <div class="profile_all">
             <div class="study">
                 <h2>PROFILE</h2>
@@ -136,7 +136,12 @@
 </section>
 
 <section id="projectall">
-    <h3 class="projecth3">Project</h3>
+    <div class="projectbigname">
+        <hr class="projectleft">
+        <h3 class="projecth3">Project</h3>
+        <hr class="projectright">
+    </div>
+     
     <ui class="projectname">
         <li><button id="buttonA" onclick="showContent('A')">TORRIDEN</button></li>
         <li><button id="buttonB" onclick="showContent('B')">HOMEPAGE</button></li>
@@ -177,7 +182,7 @@
                            <br> 환경을 생각하는 정보성을 추가 제작했습니다.
                         </p>
                     </div>
-                    <div>
+                    <div class="projectbtn">
                         <button class="button1A" id="button1A" type="button">작업과정</button>
                         <div class="modalA" id="myModalA">
                             <!-- 모달 콘텐츠 -->
@@ -236,7 +241,7 @@
                          <br>바탕으로 반응형웹사이트를 제작했습니다.</p>
                     </div>
 
-                    <div> 
+                    <div class="projectbtn">
                         <button class="button1B" id="button1B" type="button">작업과정</button>
                          
                         <div class="modalB" id="myModalB">
@@ -294,7 +299,7 @@
                            <br>프로젝트를 진행했습니다.
                         </p>
                     </div>
-                    <div> 
+                    <div class="projectbtn">
                         <button class="button1C" id="button1C" type="button">작업과정</button>
                         <div class="modalC" id="myModalC">
                             <!-- 모달 콘텐츠 -->
@@ -349,7 +354,7 @@
                           <br> 형태를 바탕으로 UI/UX디자인을 진행했습니다.
                         </p>
                     </div>
-                    <div> 
+                    <div class="projectbtn">
                         <button class="button1D" id="button1D" type="button">작업과정</button>
                         <div class="modalD" id="myModalD">
                             <!-- 모달 콘텐츠 -->
@@ -379,22 +384,38 @@
 </section>
 <section id="designall">
     <h3 class="design">Design</h3>
-    <p class="designp">이미지를 클릭하여 상세히 볼 수 있습니다.</p>
-    <div class="designimg">
-        <ul>
-            <li>
-                <a class="designimgA" href="">
-                    <img class="designimg1" src=".\img\Frame 42.png" alt=""> 
-                    <div class=" designtext"> 브래그 애사비 <br>상세페이지 디지인</div>  
-                </a>
-            </li>
-            <li>
-                <a a class="designimgB" href="">
+ 
+    <div class="detailall"> 
+        <div class="detailtxt">
+            <hr class="left">
+            <span>Detailed Page</span>
+            <hr class="right">
+        </div>
+        <div class="detailtxtp">
+            <p class="designp">이미지를 클릭하여 상세히 볼 수 있습니다.</p>
+        </div>
+         <div class="designimg">
+            <ul>
+                <li>
+                    <a a class="designimgC" href="">
+                        <img class="designimg3" src=".\img\food.png" alt="">  
+                        <div class="designtextc"> 대한곱창 밀키트 <br>상세페이지 디자인</div>   
+                    </a>
+                </li>
+                <li>
+                    <a class="designimgA" href="">
+                        <img class="designimg1" src=".\img\Frame 42.png" alt=""> 
+                        <div class=" designtext"> 브래그 애사비 <br>상세페이지 디지인</div>  
+                    </a>
+                </li>
+                <li>
+                    <a a class="designimgB" href="">
                     <img class="designimg2" src=".\img\Frame 43.png" alt="">  
                     <div class="designtextb"> 빛나유클린(청소업체) <br>상세페이지 디자인</div>   
-                </a>
-            </li>
-        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
         <div id="desmyModal" class="desmodal">
             <span class="desclose" id="descloseModalBtn">&times;</span>
@@ -402,18 +423,49 @@
           <img class="desmodal-content" id="desmodalImage" src="" alt="Modal Image">
         </div>
       </div>
-      
+    <div class="minall">
+        <div class="minimgtxt">
+            <hr class="left">
+            <span>Event banner</span>
+            <hr class="right">
+         
+        </div> 
+      <div class="minimg">
+        <ul>
+            <li><img src=".\img\coupon.png" alt=""></li>
+            <li><img src=".\img\spring.png" alt=""></li>
+            <li><img src=".\img\angel.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+    <div class="miniXall"> 
+        <div class="minimgXtxt">
+            <hr class="left">
+            <span>Leaderboard Banner</span>
+            <hr class="right">
+        </div>
+      <div class="minimgX">
+        <ul>
+            <li><img src=".\img\W.png" alt=""></li>
+            <li><img src=".\img\speak.png" alt=""></li>
+            <li><img src=".\img\orthomol.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
 </section>
 <section id="contact_all">
     <div class="contacttitle">
         <p>Thank you for viewing my portfolio</p>
+        <p>저의 열정과 창의력을 바탕으로, 앞으로도 다양한 도전을 마주하며 더욱 발전해 나가겠습니다.</p>
     </div>
         <div class="contact_id">
             <div class="contact_mail">
                 <i class="ri-mail-line" ></i>
                 <p id="copyText">jidbsk10@naver.com</p>
             </div>
-            <p>문의 시 위 메일로 연락주세요 빠르게 답장 드리겠습니다 :)</p>
+            <div class="contact_idtext"> 
+                <p>문의 시 위 메일로 연락주세요 빠르게 답장 드리겠습니다 :)</p>
+            </div>
         </div>    
  
 </section>

@@ -39,13 +39,12 @@ navLinks.forEach(link => {
    });
  },abouts);
  
-
  id.forEach((abouttext) => {ids.observe(abouttext);
  });
 
  const sub = document.querySelectorAll(".aboutsub");
  const aboutsub = {
-  threshold:0.6
+  threshold:0.3
 };
 
  const subs = new IntersectionObserver((entries, observer) => {
@@ -53,7 +52,7 @@ navLinks.forEach(link => {
      if (entry.isIntersecting) {
        entry.target.classList.add("show");
      } else {
-       
+       entry.target.classList.remove("show");
      }
    });
  },aboutsub);
@@ -79,6 +78,22 @@ $(document).ready(function() {
       return false;
   });
   
+});
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // 해당 요소가 화면에 보이면 active 클래스 추가
+      entry.target.classList.add('active');
+       
+    }else{
+      entry.target.classList.remove('active')
+    }
+  });
+}, { threshold: 0.5 }); // 50% 이상 보이면 애니메이션 시작
+
+const profileElements = document.querySelectorAll('.profile_all, .myimg');
+profileElements.forEach(element => {
+  observer.observe(element);
 });
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -221,7 +236,7 @@ function showContent(content) {
     
 
     // 디자인 이미지 클릭 시 모달 열기
-  const designLinks = document.querySelectorAll('.designimgA, .designimgB');
+  const designLinks = document.querySelectorAll('.designimgA, .designimgB, .designimgC');
   const desmodal = document.getElementById('desmyModal');
   const desmodalImage = document.getElementById('desmodalImage');
   const descloseModalBtn = document.getElementById('descloseModalBtn');

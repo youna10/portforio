@@ -2,7 +2,7 @@
     --media-title:1.5rem;
     --media-medium:17px;
     --media-large:20px;
-    --media-project:20px;
+    --media-project:28px;
     --media-projectsub:18px;
     --media-projectsubsub:15px;
     --color-n1:#4C585B;
@@ -278,36 +278,7 @@
     .oneclcikimg:hover .mediatext{
         opacity: 1;
     }
-    .designtext{
-        margin-left: 19.5px;
-    }
-    .designimg{
-        margin-top: 30px;
-    }
-    .designtext,
-    .designtextb{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, 0.5);
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.3s ease;
-    text-align: center;
-    color: var(--color-n4);
-    font-size: var(--font-projectsub);
-    opacity: 0;
-}
-    .designimg1,
-    .designimg2{
- 
-    width: 320px;
-}
-    
+
 }
 @media(max-width:420px) {
     .backgroundimg1  {
@@ -427,14 +398,25 @@
         width: 160px;
         height: 180px;
     }
- 
+    .myimg{
+        opacity: 0; /* 초기에는 보이지 않도록 */
+        transform: none;/* 밑에서 위로 오는 효과 */
+    }
+    .myimg.active{
+        opacity: 1;
+    }
     .profile_all{
         border: solid var(--color-n3) 5px;
         margin: auto;
         padding: auto;
         border-radius: 30px; 
         display: block;
-      
+        transform: none; /* 밑에서 위로 오는 효과 */
+        
+    }
+    .profile_all.active {
+        opacity: 1;
+ 
     }
     .profile_all div {
         margin-bottom: 30px;
@@ -523,75 +505,93 @@
         opacity: 1; /* 초기 상태에서 숨겨짐 */
         transition: opacity 0.3s ease;
     }
+    /*design*/
+    .design{
+        margin: auto;
+        margin-bottom: 30px;
+    }
     .designimg ul{
         display: block;
         text-align: center;
         justify-content: center;
         list-style: none;
-        height: auto;
-    
-         
+        height: auto;         
     }
     .designimg ul li {
-    
         position: relative;
         height: 400px;
         display: inline-block;
         overflow: hidden;
         margin: 20px 0;
-        
     }
-    .designimg1,
-    .designimg2{
-        width: 300px;
-   
- 
+    .minimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
- 
- 
-.designtext,
-.designtextb{
-    width: 90%;
+    .minimg ul {
+        display: block;
+        align-items: center;
+        justify-content: center;  
+    }
+    .minimgX img{
+        width: 100%;
+    }
+    .detailtxt span,
+    .minimgtxt span,
+    .minimgXtxt span{
+    color: var(--color-n2);
+    font-size: var(--media-project);
+    text-shadow: 0 1px 1px black;
 }
 /* contact */
 #contact_all{
-    padding: 30px  0 30px 20px;
+    margin: auto;
+    padding: 0;
+ 
 }
 .contacttitle p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: var(--media-title);
-    width: 70%;
     color: var(--color-n1);
     margin-bottom: 25px;
 }
-.contact_id p{
+.contacttitle :nth-child(2){
+    font-size: var(--media-projectsub);
+}
+.contact_idtext{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     margin-top: 15px;
-    width: 70%;
-    color: var(--color-n1);
-    font-size: var(--media-projectsubsub);
-} 
+    padding-bottom: 20px;
+}
+ 
 .contact_mail{
     display: flex;
     align-items: center;
-    color: var(--color-n1);
+    justify-content: center;
+    color: var(--color-n4);
+    text-shadow: 2px 2px 3px var(--color-n2);
 }
 .contact_mail i{
-    font-size: 30px;
-    margin-top: 15px;
-    margin-right: 15px;
-    background-image:linear-gradient(90deg, rgba(192,192,192,1) 50%, rgba(76,88,91,1) 100%);
-    -webkit-background-clip: text; /* 텍스트에만 배경을 적용 */
-    color: transparent; /* 텍스트 색상을 투명하게 설정 */
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
- 
+    margin-top: auto;
+    font-size:25px;
 }
+ 
 .contact_mail p{
-    font-size: 25px;
+    font-size: var(--media-large);
     cursor: pointer;
-    margin-bottom: 5px;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-
+.contact_idtext p{
+    font-size: var(--media-projectsub);
+} 
 }
 
 /*mouse scroll css*/
