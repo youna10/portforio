@@ -214,6 +214,7 @@
     }
     .alramimg {
         position: static;
+        padding-left: 20px;
         width: 260px;
         height: 270px;
         margin-left: 13%;
@@ -228,7 +229,7 @@
         text-align: center;
     }
     #contentC .medimax2{
-        padding-bottom: 55px;
+        padding-bottom: 30px;
     }
     .mediaprojecttext {
         font-size: var(--media-large);
@@ -244,18 +245,12 @@
     .homepagemain,
     .smartperfumemain,
     .alram_main{      
-        margin-left: 35px;
         position: relative;
         text-align: center;
         display: inline-block;
- 
-    }
-    .torridenmain,
-    .homepagemain{
-        margin-left: 50px;
-      
-    }
-    .mediatext{
+     }
+     
+     .mediatext{
         position: absolute;
         top: 0;
         left: 0;
