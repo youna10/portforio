@@ -763,7 +763,7 @@ body{
     align-items: center;
     color: var(--color-n4);
     text-shadow: 2px 2px 3px var(--color-n2);
-      margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 .contact_mail i{
     margin-top: 10px;

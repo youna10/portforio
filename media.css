@@ -436,8 +436,12 @@
      }
    
     /*project css*/
+    #projectall{
+        margin-left: auto;
+    }
     .projectname{
         display: none;
+        margin-left: 10px;
     }
     .torridentextmain,
     .homepagemaintetext,
@@ -547,15 +551,14 @@
 }
 .contacttitle p{
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: var(--media-title);
+    text-align: left;
+    font-size: 1.3rem;
     color: var(--color-n1);
-    margin-bottom: 25px;
+ 
 }
 .contacttitle :nth-child(2){
-    font-size: var(--media-projectsub);
+    font-size: 16px;
 }
 .contact_idtext{
     display: flex;
@@ -565,13 +568,16 @@
     margin-top: 15px;
     padding-bottom: 20px;
 }
- 
+ .contact_id{
+    margin-top:auto;
+}
 .contact_mail{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     color: var(--color-n4);
     text-shadow: 2px 2px 3px var(--color-n2);
+    margin: auto;
 }
 .contact_mail i{
     margin-top: auto;
@@ -585,7 +591,9 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 .contact_idtext p{
-    font-size: var(--media-projectsub);
+    margin: auto;
+    font-size: 15px;
+    text-align: left;
 } 
 }
 
