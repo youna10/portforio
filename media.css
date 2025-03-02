@@ -256,6 +256,12 @@
 
 }
 @media(max-width:420px) {
+    .aboutme,
+    #sectionprofile,
+    #projectall,
+    #designall{
+        margin-left: auto;
+    }
      .frist{
         height: 90vh;
     }
@@ -283,14 +289,14 @@
    
     .about{
         opacity: 1;
-        margin-top: 20px;
+        margin-top: 20px; 
         width: auto;
         transform: none;
         transition: all 0.5s ease-out;
     }
     .about h3{
-        width: 54%;
-        font-size: 1.6rem;
+        width: 60%;
+        font-size: 1.2rem;
         color: var(--color-n2);
         transform: none;
     }
@@ -310,8 +316,7 @@
         color: var(--color-n1);
     }
     .aboutsub1,
-    .aboutsub2,
-    .aboutsub3{
+    .aboutsub2{
         background-color:var(--color-n3); 
         border-radius: 50px; 
         margin-bottom: 30px;
@@ -326,12 +331,6 @@
         opacity: 1;
         transition: all 0.3s ease-out;
         animation-delay: 1s;
-    }
-
-
-    
-    #sectionprofile{
-        margin: auto;
     }
     .profile_title{
         margin-top: 70px;
@@ -388,9 +387,6 @@
      }
    
     /*project css*/
-    #projectall{
-        margin-left: auto;
-    }
     .projectname{
         display: none;
         margin-left: 10px;
@@ -406,8 +402,6 @@
         margin: auto;
         display: block;
         margin: 0 10px;
-      
- 
     }
     .torrideimg,
     .homepageimg{
@@ -421,7 +415,6 @@
     .alram_main{
         margin: auto;
     }
- 
     .perfumeapp{
    
         position: static;
@@ -434,8 +427,6 @@
         width: 250px;
         height: 230px;
     }
- 
- 
     .mediaprojecttext p{
         font-size: var(--media-large);
         color: var(--color-n1);
