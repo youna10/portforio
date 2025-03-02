@@ -59,21 +59,25 @@ body{
 }
 .index_all ul li{
     margin: 0 50px;
-    padding: 3px 3px;
+    padding: 7px 7px; 
+    
 }
 .index_allul li a{
-    padding: 0 15px;
+    padding: 7px 10px; 
     color: var(--color-n1);
     font-weight: 600;
     letter-spacing: 2px;
-
+ 
+ 
 }
-.index_allul li a:hover{
+.index_allul li:hover{
     background: var(--color-n3);
     border-radius: 20px;
-    padding:5px 15px;
-    transition: 0.2s;
+    transition: 0.3s;
+}
+.index_allul li a:hover{
     color: var(--color-n4);
+    transition: 0.3s;
 }
 
 .tooglebtn{
@@ -89,44 +93,58 @@ body{
     font-family: "KyoboHand";
     height: 90vh;
 }
- 
+.maincphoto{
+    margin-top: 15px;
+}
+.maincphoto img{
+    margin-top: 15px;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .maintxt{
     position: relative;
-    margin-top: 10px;
-   
-
 }
 .maintxt p{
-     
-    font-size: 8rem;
+    text-align: center;
+    font-size: 6rem;
     font-weight: 600;
     color: var(--color-n1);
     text-shadow: 0 3px 1px var(--color-n2);
-    }
-.mainimg2{
-    position: absolute;
-    top: 25%;
-    left: 65%;
-    background: var(--color-n3);
-    box-shadow: 2px 5px 8px black;
-    width: 400px;
-    padding: 30px 0;
-    padding-left: 10px;
-    border-radius: 100%;
-    transform: rotate(15deg);
+    opacity: 0; 
+    transform: translateY(30px);
+    animation: fadeInUp 0.5s ease-out forwards; /* 기본 애니메이션 설정 */
+    animation-delay: 0s; /* 기본값은 바로 시작 */
 }
-.backgroundimg1  {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    height: 330px;
-    width: 330px;
-} 
-.backgroundimg2{
-    position: absolute;
-    top:23%;
-    height: 500px;
-    width: 500px;
+
+.maintxt p:nth-child(1) {
+  animation-delay: 0.5s; 
+}
+
+.maintxt p:nth-child(2) {
+  animation-delay: 1s; 
+}
+
+.maintxt p:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.maintxt p:nth-child(4) {
+  animation-delay: 2s; 
+}
+
+/* 애니메이션 설정 */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 /* header end*/
 
@@ -196,8 +214,7 @@ body{
     color: var(--color-n1);
 }
 .aboutsub1,
-.aboutsub2,
-.aboutsub3{
+.aboutsub2{
     background-color:var(--color-n3); 
     border-radius: 50px; 
     margin-bottom: 30px;
@@ -213,11 +230,6 @@ body{
     transition: all 0.3s ease-out;
     animation-delay: 1s;
 }
-.aboutsub3{
-    opacity: 0;
-    transition: all 0.3s ease-out;
-    animation-delay: 1.3s;
-}
  
 .aboutsub.show .aboutsub1{
     opacity: 1;
@@ -225,10 +237,6 @@ body{
 .aboutsub.show .aboutsub2{
     opacity: 1;
     transition-delay: 1s;
-}
-.aboutsub.show .aboutsub3{
-    opacity: 1;
-    transition-delay: 1.5s;
 }
 
 /*porfile*/
@@ -276,12 +284,6 @@ body{
     opacity: 0; /* 초기에는 보이지 않도록 */
     transform: translateX(-50px); /* 밑에서 위로 오는 효과 */
     transition: all 0.8s ease-out; /* 부드럽게 이동 */
-}
-.profileimg{
-    box-shadow: 0 2px 10px gray;
-    border-radius: 20px;
-    width: 300px;
-    height: 370px;
 }
 .myimg.active{
     opacity: 1;
@@ -364,8 +366,7 @@ body{
     list-style: none;
     
 }
-.projectname li{
-     
+.projectname li{  
     margin: 30px;
     padding: 10px;
     border-radius: 30px;
@@ -379,12 +380,15 @@ body{
     font-size: var(--font-projectsubsub);
     color: var(--color-n1);
     font-weight: 500;
+ 
 }
 .projectname li:hover{
     color: var(--color-n2);
     border: solid var(--color-n2) 3px;
+    transition: 0.5s;
 }
 .projectname li:hover button{
+    transition: 0.5s;
     color: var(--color-n2);
 }
 .projectsubname{

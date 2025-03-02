@@ -80,53 +80,33 @@
     .frist{
         height: 90vh;
     }
-     
+    .maincphoto{
+        margin-top: auto;
+    }
+    .maincphoto img{
+        margin-top: 30px;
+        width: 78%;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .maintxt{
         position: relative;
-        margin-top: 170px;
+        margin-top: 58px;
+
     }
     .maintxt p{
-        font-size:7rem;
+        font-size: 6rem;
         font-weight: 600;
         color: var(--color-n1);
         text-shadow: 0 3px 1px var(--color-n2);
         }
- 
-    .mainimg2{
-        position: absolute;
-        top: 25%;
-        left: 62%;
-        background: var(--color-n3);
-        box-shadow: 0px 5px 8px black;
-        width: 350px;
-        padding: 30px 0;
-        padding-left: 10px;
-        border-radius: 100%;
-        transform: rotate(10deg);        
-    }
-    .mainimg2 img{
-        width: 300px;
-        height: 300px;
-    }
-    .backgroundimg1  {
-        position: absolute;
-        top: 10%;
-        right: 0%;
-        height: 320px;
-        width: 320px;
-    } 
-    .backgroundimg2{
-        position: absolute;
-        top:32%;
-        height: 500px;
-        width: 500px;
-    }
     .about{
         opacity: 0;
         transform: translateX(-100px);
         transition: all 1s ease-out;
         margin-top: 20px;
-        width: 54%;
+        width: 53%;
 
     }
     .abouttext.show .about{
@@ -276,54 +256,24 @@
 
 }
 @media(max-width:420px) {
-    .backgroundimg1  {
-        position: absolute;
-        top: 10%;
-        right: 0%;
-        height: 200px;
-        width: 200px;
-    } 
-    .backgroundimg2  {
-        position: absolute;
-        top:50%;
-        height:300px;
-        width: 300px;
-    }
-    .mainimg2 img{
-        margin-left: 25px;
-        width: 150px;
-        height: 150px;
-    }
-    .frist{
+     .frist{
         height: 90vh;
     }
      
     .maintxt{
         position: relative;
-        top: 130px;
+        top: 180px;
         margin-top: auto;
     
     }
     .maintxt p{
-        font-size: 3rem;
+        font-size: 3.5rem;
         text-align: center;
         font-weight: 600;
         color: var(--color-n1);
         text-shadow: 0 3px 1px var(--color-n2);
         }
-    .mainimg2{
-        position: absolute;
-        background: none;
-        border-radius: 100%;
-        transform: rotate(0deg);
-        box-shadow:none;
-        top: 38%;
-        left: 45%;
-        width: 200px;
-        padding:auto;
-        margin-left: 10px;
-    }
-    
+   
     .about{
         opacity: 1;
         margin-top: 20px;
@@ -366,11 +316,6 @@
         transition: all 0.6s ease-out;
     }
     .aboutsub2{
-        opacity: 1;
-        transition: all 0.3s ease-out;
-        animation-delay: 1s;
-    }
-    .aboutsub3{
         opacity: 1;
         transition: all 0.3s ease-out;
         animation-delay: 1s;
@@ -660,7 +605,7 @@
   }
   .iconmouse {
     position: absolute;
-    bottom: 50px;
+    bottom: 25px;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 1;
