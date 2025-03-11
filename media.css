@@ -94,7 +94,7 @@
     .maintextimg{
         margin-top: 80px;
     }
-    
+
     .about{
         opacity: 0;
         transform: translateX(-100px);
@@ -257,7 +257,7 @@
         margin-left: auto;
     }
      .frist{
-        height: 90vh;
+        height: 80vh;
     }
     .mainback img:first-child {
         position: absolute;
@@ -277,7 +277,7 @@
         width:100%;
     }
     .iconmouse{
-        bottom: 15px;
+        bottom: auto;
     }
     .about{
         opacity: 1;
