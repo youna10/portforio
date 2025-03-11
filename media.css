@@ -91,7 +91,7 @@
         left: -30%;
         width: 100%;
     }
-    .maintxt{
+    .maintextimg{
         margin-top: 80px;
     }
     
@@ -277,7 +277,7 @@
         width:100%;
     }
     .iconmouse{
-        margin-top: 10px;
+        bottom: 15px;
     }
     .about{
         opacity: 1;
