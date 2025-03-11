@@ -90,61 +90,58 @@ body{
     display: none;
 }
 .frist{
-    font-family: "KyoboHand";
-    height: 90vh;
-}
-.maincphoto{
-    margin-top: 15px;
-}
-.maincphoto img{
-    margin-top: 15px;
-    position: absolute;
-    width: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.maintxt{
     position: relative;
-}
-.maintxt p{
-    text-align: center;
-    font-size: 6rem;
-    font-weight: 600;
-    color: var(--color-n1);
-    text-shadow: 0 3px 1px var(--color-n2);
-    opacity: 0; 
-    transform: translateY(30px);
-    animation: fadeInUp 0.5s ease-out forwards; /* 기본 애니메이션 설정 */
-    animation-delay: 0s; /* 기본값은 바로 시작 */
+    height: 95vh;
+    overflow: hidden;
 }
 
-.maintxt p:nth-child(1) {
-  animation-delay: 0.5s; 
+.mainback img:first-child {
+    position: absolute;
+    top: 0%;
+    left: -10%;
+    width: 120%;
+}
+.mainback img:nth-child(2){
+    position: absolute;
+    top: -70%;
+    left: -30%;
+    width: 100%;
+}
+.maintextimg{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center; 
+}
+.maintextimg img{
+    opacity: 0;   
+    transform: translateY(30px);  /* 이미지는 아래쪽에서 시작 */
+    animation: slideUp 1s ease-in-out forwards;
+    width: 55%;
+    position: relative;
+    display: block; 
+    margin: 0 auto;
+}
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);  /* 아래쪽에서 시작 */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);  /* 원래 위치로 이동 */
+    }
+}
+.maintextimg img:nth-child(1) {
+    animation-delay: 0.1s; 
 }
 
-.maintxt p:nth-child(2) {
-  animation-delay: 1s; 
+.maintextimg img:nth-child(2) {
+    animation-delay: 0.4s;  
 }
 
-.maintxt p:nth-child(3) {
-  animation-delay: 1.5s;
-}
-
-.maintxt p:nth-child(4) {
-  animation-delay: 2s; 
-}
-
-/* 애니메이션 설정 */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.maintextimg img:nth-child(3) {
+    animation-delay: 0.7s;  
 }
 /* header end*/
 
