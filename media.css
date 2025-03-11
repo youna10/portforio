@@ -267,16 +267,18 @@
     }
     .mainback img:nth-child(2){
         position: absolute;
-        top: -25%;
+        top: -15%;
         left: -25%;
         width: 120%;
     }
     .maintextimg{
-        margin-top:100px;
-
+        margin-top:120px;
     }
     .maintextimg img{
         width:100%;
+    }
+    .iconmouse{
+        margin-top: 30px;
     }
     .about{
         opacity: 1;
