@@ -76,24 +76,23 @@
    }
  
     .frist{
-
         margin-top:55px;
         height: 90vh;
     }
     .mainback img:first-child {
         position: absolute;
-        top: 0%;
+        top: 5%;
         left: -10%;
         width: 120%;
     }
     .mainback img:nth-child(2){
         position: absolute;
-        top: -60%;
+        top: -50%;
         left: -30%;
         width: 100%;
     }
     .maintxt{
-        margin-top: 60px;
+        margin-top: 80px;
     }
     
     .about{
@@ -278,7 +277,7 @@
         width:100%;
     }
     .iconmouse{
-        margin-top: 30px;
+        margin-top: 10px;
     }
     .about{
         opacity: 1;
