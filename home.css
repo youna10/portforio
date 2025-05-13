@@ -392,7 +392,7 @@ body{
     margin-top: 30px;   
 }
  
-
+.owarldtext h3,
 .alramtext h3,
 .oneclciktext h3,
 .smartperfumetext h3,
@@ -408,6 +408,7 @@ body{
     color: var(--color-n2);
     margin-top: 15px;
 }
+.owarldsubtext ul li,
 .alramsubtext ul li,
 .oneclciksubtext ul li,
 .smartperfumesubtext ul li,
@@ -417,6 +418,7 @@ body{
     color: var(--color-n1);
     font-size: var(--font-projectsub);
 }
+.owarldsubtext ul li p:nth-child(1),
 .alramsubtext ul li p:nth-child(1),
 .oneclciksubtext ul li p:nth-child(1),
 .smartperfumesubtext ul li p:nth-child(1),
@@ -424,6 +426,7 @@ body{
 .homepagesubtext ul li p:nth-child(1){
     font-weight: 700;
 }
+.owarldsubtext ul li p:nth-child(2),
 .alramsubtext ul li p:nth-child(2),
 .oneclciksubtext ul li p:nth-child(2),
 .smartperfumesubtext ul li p:nth-child(2),
@@ -435,7 +438,7 @@ body{
 .mediatext{
     display: none;
 }
- 
+.button1Z,
 .button1A,
 .button1B,
 .button1C,
@@ -457,7 +460,7 @@ body{
     box-shadow: 0px 1px 5px hwb(0 50% 50%);
     cursor: pointer;
 }
-
+.button1Z:hover,
 .button1A:hover,
 .button1B:hover,
 .button1C:hover,
@@ -473,7 +476,7 @@ body{
 .viewbtn_media1{
     display: none;
 }
- 
+.modalZ,
 .modalA,
 .modalB,
 .modalC,
@@ -490,6 +493,7 @@ body{
     padding-top: 60px; /* 위쪽에 약간의 여백 */
     pointer-events: auto;
 }
+.modal-containerZ,
 .modal-containerA,
 .modal-containerB,
 .modal-containerC,
@@ -504,7 +508,7 @@ body{
     height: 90vh; /* 모달 내에서 세로 길이를 고정 */
     object-fit: contain;
 }
- 
+.button1imgZ,
 .button1imgA,
 .button1imgB,
 .button1imgC,
@@ -514,6 +518,7 @@ body{
     height: auto;
     object-fit: contain; /* 이미지가 비율에 맞게 크기 조정 */
 }
+.closeZ,
 .closeA,
 .closeB,
 .closeC,
@@ -539,6 +544,7 @@ body{
     right: 12%;
 }
 /* torriden*/
+.owarldtextmain,
 .torridentextmain,
 .homepagemaintetext,
 .smartperfumemaintetext,
@@ -548,6 +554,12 @@ body{
    margin: 0 100px;
 }
 .torrideimg{
+    box-shadow: 0 3px 5px gray;
+    width: 500px;
+    height: 450px;
+    margin-left: 50px;
+}
+.zooimg{
     box-shadow: 0 3px 5px gray;
     width: 500px;
     height: 450px;

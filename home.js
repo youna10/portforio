@@ -97,7 +97,7 @@ profileElements.forEach(element => {
 });
 
 window.addEventListener('DOMContentLoaded', function() {
-  showContent('A');
+  showContent('Z');
   checkWindowSize(); // 초기 화면 크기 체크
 });
 
@@ -109,18 +109,19 @@ window.addEventListener('resize', function() {
 function checkWindowSize() {
   if (window.innerWidth <= 1194) {
     // 화면 너비가 950px 이하일 때는 모든 콘텐츠 보이기
+    document.getElementById("contentZ").style.display = "flex";
     document.getElementById("contentA").style.display = "flex";
     document.getElementById("contentB").style.display = "flex";
     document.getElementById("contentC").style.display = "flex";
     document.getElementById("contentD").style.display = "flex";
     document.getElementById("contentE").style.display = "flex";
   } else {
-    // 화면 너비가 950px 초과일 때는 선택된 콘텐츠만 보이도록 설정
-    showContent('A'); // 기본적으로 'A'를 보이게 설정
-  }
+    showContent('Z'); 
+   }
 }
 
 function showContent(content) {
+  var contentZ = document.getElementById("contentZ");
   var contentA = document.getElementById("contentA");
   var contentB = document.getElementById("contentB");
   var contentC = document.getElementById("contentC");
@@ -128,6 +129,7 @@ function showContent(content) {
 
 
   // 내용 숨김
+  contentZ.style.display = "none";
   contentA.style.display = "none";
   contentB.style.display = "none";
   contentC.style.display = "none";
@@ -135,7 +137,9 @@ function showContent(content) {
 
 
   // 선택한 내용 보이기
-  if (content === "A") {
+  if (content === "Z") {
+    contentZ.style.display = "flex";
+  } else if (content === "A") {
     contentA.style.display = "flex";
   } else if (content === "B") {
     contentB.style.display = "flex";
@@ -143,8 +147,30 @@ function showContent(content) {
     contentC.style.display = "flex";
   } else if (content === "D") {
     contentD.style.display = "flex";
-  } 
+  }
 }
+const openModalBtnZ = document.getElementById("button1Z");
+const modalZ = document.getElementById("myModalZ");
+const closeModalBtnZ = document.getElementById("closeModalBtnZ");
+const modalImageZ = document.getElementById("modalImageZ");
+
+// 버튼 클릭 시 모달 열기
+openModalBtnZ.onclick = function() {
+  modalZ.style.display = "block"; // 모달을 보이게 설정
+}
+
+// 닫기 버튼 클릭 시 모달 닫기
+closeModalBtnZ.onclick = function() {
+  modalZ.style.display = "none"; // 모달을 숨기게 설정
+}
+
+// 모달 밖을 클릭하면 모달 닫기
+window.onclick = function(event) {
+  if (event.target === modalZ) {
+    modalZ.style.display = "none"; // 모달을 숨기게 설정
+  }
+};
+
     const openModalBtn = document.getElementById("button1A");
     const modalA = document.getElementById("myModalA");
     const closeModalBtn = document.getElementById("closeModalBtnA");

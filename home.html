@@ -126,15 +126,16 @@
         </div>
     </div>
 </section>
-
+ 
 <section id="projectall">
     <div class="projectbigname">
         <hr class="projectleft">
         <h3 class="projecth3">Project</h3>
         <hr class="projectright">
     </div>
-     
+    
     <ui class="projectname">
+        <li><button id="buttonZ" onclick="showContent('Z')">O-WARLD</button></li>
         <li><button id="buttonA" onclick="showContent('A')">TORRIDEN</button></li>
         <li><button id="buttonB" onclick="showContent('B')">HOMEPAGE</button></li>
         <li><button id="buttonC" onclick="showContent('C')">SMART PERFUME</button></li>
@@ -143,6 +144,66 @@
     </ui>
  
     <ui class="projectsubname">
+        <li>
+            <div id="contentZ">
+                <div class="owarldtextmain">
+                    <div class="owarldtext">
+                        <h3>오월드(포트폴리용)</h3>
+                    </div>
+                    <div class="owarldsubtext">
+                        <ul>
+                            <li>
+                                <p>Type</p>
+                                <p>Web</p>
+                            </li>
+                            <li>
+                                <p>Tool</p>
+                                <p>Figma</p>
+                            </li>
+                            <li>
+                                <p>참여도</p>
+                                <p>100%(개인)</p>
+                            </li>
+                            <li>
+                                <p>제작연도</p>
+                                <p>2025</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="torridnetext">
+                        <p>기존 사이트에서 카테고리별 어트렉션과 
+                           <br> 최근 소식, 정보 등을 보여주는 내용을 추가 제작했습니다.
+                        </p>
+                    </div>
+                    <div class="projectbtn">
+                        <button class="button1Z" id="button1Z" type="button">작업과정</button>
+                        <div class="modalZ" id="myModalZ">
+                            <!-- 모달 콘텐츠 -->
+                            <span class="closeZ" id="closeModalBtnZ">&times;</span>
+                            <div class="modal-containerZ">
+                            <img class="button1imgZ" id="modalImageZ" src=".\img\zoodetail.png" alt="">
+                          </div>
+                        </div>
+                        <button class="button2" type="button" onclick="window.open('https://www.figma.com/design/XX52NSArgk3OQZosht23ri/torriden-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EC%9A%A9-?node-id=738-4436&t=1hp0mmoSWYDKrdZ0-1');" >Figma</button>
+                        <button class="button3" type="button" onclick="window.open('https://youna10.github.io/project1.github.io/');">사이트</button>
+                    </div>
+                </div>
+                <div class="medimax2"> 
+                    <a href="https://youna10.github.io/zoo.github.io/">
+                    <div class="owarldmain">
+                        <div class="mediatext">오월드(포트폴리용)<br>홈페이지 제작</div>
+                        <img class="zooimg" src=".\img\zooimg.png" alt="">     
+                    </div>
+                    </a>
+                    <div class="mediaprojecttext">
+                        <h3>Owarld(포트폴리용)</h3>
+                        <p>기존 사이트에서 어트렉션과 
+                        최근 소식, 정보 등을 보여주는 내용을 추가 제작했습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>    
+        </li>
         <li>
             <div id="contentA">
                 <div class="torridentextmain">
@@ -183,15 +244,17 @@
                             <img class="button1imgA" id="modalImageA" src=".\img\torriden상세.png" alt="">
                           </div>
                         </div>
-                        <button class="button2" type="button" onclick="window.location.href='https://www.figma.com/design/XX52NSArgk3OQZosht23ri/torriden(%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EC%9A%A9)?node-id=0-1&t=SpREAR5YCyBRViuU-1';" >Figma</button>
-                        <button class="button3" type="button" onclick="window.location.href='https://youna10.github.io/project1.github.io/';">사이트</button>
+                        <button class="button2" type="button" onclick="window.open('https://www.figma.com/design/XX52NSArgk3OQZosht23ri/torriden(%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EC%9A%A9)?node-id=0-1&t=SpREAR5YCyBRViuU-1');" >Figma</button>
+                        <button class="button3" type="button" onclick="window.open('https://youna10.github.io/project1.github.io/');">사이트</button>
                     </div>
                 </div>
                 <div class="medimax2"> 
+                    <a href="https://youna10.github.io/project1.github.io/"> 
                     <div class="torridenmain">
                         <div class="mediatext">토리든(포트폴리용)<br>홈페이지 제작</div>
                         <img class="torrideimg" src=".\img\torrideimg.png" alt="">     
                     </div>
+                    </a>
                     <div class="mediaprojecttext">
                         <h3>Torriden(포트폴리용)</h3>
                         <p>기존 사이트에서 카테고리별 필터링과 
@@ -243,15 +306,17 @@
                             <img class="button1imgB" id="modalImageB" src=".\img\homepage상세.png" alt="">
                           </div>
                         </div>
-                        <button class="button3" type="button"  onclick="window.location.href='https://yuna10homepage.netlify.app';">사이트</button>
+                        <button class="button3" type="button"  onclick="window.open('https://yuna10homepage.netlify.app');">사이트</button>
                     </div>
                 </div>
           
                 <div class="medimax2">
+                    <a href="ttps://yuna10homepage.netlify.app"> 
                     <div class="homepagemain">
                         <div class="mediatext">홈페이지 제작</div>
                         <img class="homepageimg" src=".\img\homepage.png" alt=""> 
                     </div>
+                    </a>
                     <div class="mediaprojecttext">
                         <h3>homePage</h3>
                         <p>자기소개, 프로젝트에 대한 정보를
