@@ -1,16 +1,21 @@
 @font-face {
-    font-family: 'KyoboHand';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-family: 'GowunBatang-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-@font-face {
-    font-family: 'NEXON Lv1 Gothic OTF';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
     unicode-range: U+AC00-D7A3;
 }
+
+
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src:url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Qwitcher+Grypen&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0020-007F;
+}
 :root{
-    --index-font:1.1rem;
+    --index-font:1.2rem;
     --font-title:3.2rem;
     --font-title2:2.5rem;
     --font-project:40px;
@@ -20,7 +25,6 @@
     --color-n2:#7E99A3;
     --color-n3:#A5BFCC;
     --color-n4:#F4EDD3;
-    --font-korea:"Noto Serif KR", serif;
 }
 *{
     margin: 0;
@@ -28,6 +32,7 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     text-decoration: none;
+ 
 }
 html{
     width: 100%; 
@@ -35,7 +40,7 @@ html{
 
     }
 body{
-    font-family:  "NEXON Lv1 Gothic OTF";
+    font-family:  "GowunBatang-Regular",sans-serif;
     cursor: default;
     caret-color: transparent;
 }
@@ -48,8 +53,6 @@ body{
     justify-content: space-between;
 }
 .index_all{
-    position: relative;
-    right:18%;
     z-index: 100;
 }
 .index_all ul{
@@ -58,25 +61,20 @@ body{
     font-size: var(--index-font);
 }
 .index_all ul li{
-    margin: 0 50px;
-    padding: 7px 7px; 
-    
+    margin: 0 30px;
+    padding: 7px 7px;     
 }
 .index_allul li a{
     padding: 7px 10px; 
     color: var(--color-n1);
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 2px;
  
  
 }
-.index_allul li:hover{
-    background: var(--color-n3);
-    border-radius: 20px;
-    transition: 0.3s;
-}
+ 
 .index_allul li a:hover{
-    color: var(--color-n4);
+    color: var(--color-n2);
     transition: 0.3s;
 }
 
@@ -90,22 +88,24 @@ body{
     display: none;
 }
 .frist{
-    position: relative;
     height: 95vh;
+    position: relative;
     overflow: hidden;
+     
 }
-
 .mainback img:first-child {
     position: absolute;
     top: 0%;
     left: -10%;
     width: 120%;
+ 
 }
 .mainback img:nth-child(2){
     position: absolute;
-    top: -70%;
-    left: -30%;
+    top: -55%;
+    left: -28%;
     width: 100%;
+ 
 }
 .maintextimg{
     margin-top: 35px;
@@ -149,15 +149,15 @@ body{
  
 .topbtn{
     display: none;
-    box-shadow: 0 5px 8px black ;
-    background: #FFFF;
+    box-shadow: 0 3px 5px rgba(109, 109, 109, 0.5) ;
+    background: rgb(255, 255, 255,0.5);
     padding-left: 3px;
     padding-right: 3px;
     font-size: 40px;
     position: fixed;
     right: 5%;
     bottom: 30px;
-    border: 1px solid  #FFFF;
+    border: none;
     border-radius: 100%;
     cursor: pointer; 
     z-index: 990;
@@ -175,7 +175,7 @@ body{
 .abouttitle{
     font-size: var(--font-title);
     color: var(--color-n1);
-    text-shadow: 0 5px 2px var(--color-n3);
+    text-shadow: 2px 2px 3px var(--color-n3);
 }
 .abouttext{
     display: flex;
@@ -247,7 +247,7 @@ body{
 .profile_title h3{
     font-size: var(--font-title);
     color: var(--color-n1);
-    text-shadow: 0 5px 2px var(--color-n3);
+    text-shadow:2px 2px 3px var(--color-n3);
 }
 
 .profile_title p{
@@ -260,6 +260,7 @@ body{
     align-items: center;
 } 
 .profile_all{
+    font-family: 'NanumSquareRound';
     padding: 100px 60px;
     margin: 0 50px;
     display: grid;
@@ -320,282 +321,106 @@ body{
     height: 50px;
  }
 
-/*project start*/
-#projectall {
-    margin-top: 70px;
-    margin-left: 50px;
-    
-}
-.projectbigname{
-    width: 98%;
-    display: flex;
-    align-items: center;
- 
-}
-.projecth3{
+ /*project*/
+ #projectcontact{
+    margin-top: 80px;
+ }
+
+ #projectcontact h3{
+    margin-left:50px;
     font-size: var(--font-title);
     color: var(--color-n1);
-    text-shadow: 0 5px 2px var(--color-n3);
-}
-.projectleft{
-    flex-grow: 1; /* 선이 텍스트 양옆으로 길게 확장되도록 */
-    border: none;
-    border-top: 2px solid var(--color-n1); /* 선 두께와 색상 설정 */
-    margin-right: 10px; /* 텍스트와 선 사이의 간격 */
-}
-.projectright{
-    flex-grow: 1; /* 선이 텍스트 양옆으로 길게 확장되도록 */
-    border: none;
-    border-top: 2px solid var(--color-n1); /* 선 두께와 색상 설정 */
-    margin-right: 10px; /* 텍스트와 선 사이의 간격 */
-}
-
-.projectname{
+    text-shadow: 2px 2px 3px var(--color-n3);
+ }
+.fristproject,
+.secondproject{
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 50px;
-    margin: 0 50px;
- 
+    justify-content: center;
+    margin-top: 50px;
 }
-.projectname li,
-.projectsubname li{
-    list-style: none;
-    
+.finalproject{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 50px;
 }
-.projectname li{  
-    margin: 30px;
-    padding: 10px;
+.fristproject div img:hover,
+.secondproject div img:hover,
+.finalproject div img:hover{
+    box-shadow: 0 2px 8px rgb(158, 158, 158);
+    transition: all 0.3s ease;
+}
+.projecta,
+.projectc{ 
+    margin-right: 50px;
+}
+.fristproject img,
+.secondproject img,
+.finalproject img{ 
+     
     border-radius: 30px;
-    border: solid var(--color-n4);
+   
 }
-.projectname li button{
-    margin: 0 10px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: var(--font-projectsubsub);
+.projecte {
+    position: relative;
+    left: 15%;
+}
+.projecta p,
+.projectb p,
+.projectc p,
+.projectd p ,
+.projecte p{
+    margin-left: 15px;
+}
+.projecta p:nth-of-type(1),
+.projectb p:nth-of-type(1),
+.projectc p:nth-of-type(1),
+.projectd p:nth-of-type(1),
+.projecte p:nth-of-type(1){
+    
+    margin-top: 5px;
     color: var(--color-n1);
-    font-weight: 500;
- 
-}
-.projectname li:hover{
-    color: var(--color-n2);
-    border: solid var(--color-n2) 3px;
-    transition: 0.5s;
-}
-.projectname li:hover button{
-    transition: 0.5s;
-    color: var(--color-n2);
-}
-.projectsubname{
-    margin-top: 30px;   
-}
- 
-.owarldtext h3,
-.alramtext h3,
-.oneclciktext h3,
-.smartperfumetext h3,
-.torridnetext h3,
-.homepagetext h3{
-    font-size: var(--font-project);
-    color: var(--color-n1);
-    margin-bottom: 10px;
-}
- 
-.torridnetext p{
-    font-size: var(--font-projectsubsub);
-    color: var(--color-n2);
-    margin-top: 15px;
-}
-.owarldsubtext ul li,
-.alramsubtext ul li,
-.oneclciksubtext ul li,
-.smartperfumesubtext ul li,
-.torridensubtext ul li,
-.homepagesubtext ul li{
-    display: block;
-    color: var(--color-n1);
+    font-weight: bold;
     font-size: var(--font-projectsub);
 }
-.owarldsubtext ul li p:nth-child(1),
-.alramsubtext ul li p:nth-child(1),
-.oneclciksubtext ul li p:nth-child(1),
-.smartperfumesubtext ul li p:nth-child(1),
-.torridensubtext ul li p:nth-child(1),
-.homepagesubtext ul li p:nth-child(1){
-    font-weight: 700;
-}
-.owarldsubtext ul li p:nth-child(2),
-.alramsubtext ul li p:nth-child(2),
-.oneclciksubtext ul li p:nth-child(2),
-.smartperfumesubtext ul li p:nth-child(2),
-.torridensubtext ul li p:nth-child(2),
-.homepagesubtext ul li p:nth-child(2){
-    font-size: var(--font-projectsubsub);
-    margin: 7px 0;
-}
-.mediatext{
-    display: none;
-}
-.button1Z,
-.button1A,
-.button1B,
-.button1C,
-.button1D,
-.button1E,
-.button2,
-.button3{
-    margin-top: 15px;
-    margin-right: 10px;
-    padding: 6px 30px;
-    border-radius: 20px;
-    text-align: center;
-    font-size: var(--font-btn);
-    color:var(--color-n1);
-    background: none;
-    background: var(--color-n3);
-    font-weight: 550;
-    border: none;
-    box-shadow: 0px 1px 5px hwb(0 50% 50%);
-    cursor: pointer;
-}
-.button1Z:hover,
-.button1A:hover,
-.button1B:hover,
-.button1C:hover,
-.button1D:hover,
-.button1E:hover,
-.button2:hover,
-.button3:hover
- {
-    transition: 0.2s;
-    color: white;
 
+.projecta p:nth-of-type(2),
+.projectb p:nth-of-type(2),
+.projectc p:nth-of-type(2),
+.projectd p:nth-of-type(2),
+.projecte p:nth-of-type(2){
+    margin-top: 2px;
+    color: var(--color-n2);
+    font-size: var(--font-projectsubsub);
 }
-.viewbtn_media1{
-    display: none;
-}
-.modalZ,
-.modalA,
-.modalB,
-.modalC,
-.modalD,
-.modalE{
-    display: none; /* 모달 기본 숨김 */
-    position: fixed; /* 화면 고정 */
-    z-index: 999; /* 다른 콘텐츠 위에 띄움 */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(128, 128, 128, 0.5); /* 배경 어둡게 */
-    padding-top: 60px; /* 위쪽에 약간의 여백 */
-    pointer-events: auto;
-}
-.modal-containerZ,
-.modal-containerA,
-.modal-containerB,
-.modal-containerC,
-.modal-containerD,
-.modal-containerE{
-    margin: auto;
-    display: block;
-    width: 65%;
-    max-height: 90vh; /* 화면 높이의 80%로 제한 */
-    overflow-y: auto; /* 세로 스크롤을 활성화 */
-    overflow-x: hidden; /* 가로 스크롤은 비활성화 */
-    height: 90vh; /* 모달 내에서 세로 길이를 고정 */
-    object-fit: contain;
-}
-.button1imgZ,
-.button1imgA,
-.button1imgB,
-.button1imgC,
-.button1imgD,
-.button1imgE{
-    width: 100%;
-    height: auto;
-    object-fit: contain; /* 이미지가 비율에 맞게 크기 조정 */
-}
-.closeZ,
-.closeA,
-.closeB,
-.closeC,
-.closeD,
-.closeE{
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-  }
- /*alram*/
- .alramimg{
-    position: absolute;
-    right: 7%;
-    margin-top: 40px;
- }
-.perfumeapp{
-    position: absolute;
-    margin-top: 30px;
-    right: 12%;
-}
-/* torriden*/
-.owarldtextmain,
-.torridentextmain,
-.homepagemaintetext,
-.smartperfumemaintetext,
-.alrammaintext,
-.oneclcikmaintext
-{
-   margin: 0 100px;
-}
-.torrideimg{
-    box-shadow: 0 3px 5px gray;
-    width: 500px;
-    height: 450px;
+ 
+.projectb
+.projectc{
     margin-left: 50px;
 }
-.zooimg{
-    box-shadow: 0 3px 5px gray;
-    width: 500px;
-    height: 450px;
-}
-/* homepage*/
-.homepageimg{
-    box-shadow: 0 3px 5px gray;
-    width: 500px;
-    height: 450px;
-}
-.mediaprojecttext{
-   display: none;
-}
-
 /*design*/
 #designall{
     margin-top: 100px;
- 
+    padding-bottom: 50px;
+    background-color: var(--color-n1);
 }
 .design{
-    margin-left: 50px;
+    
+    padding-top: 15px;
     font-size: var(--font-title);
-    color: var(--color-n1);
-    text-shadow: 0 5px 2px var(--color-n3);
+    color: var(--color-n4);
+    text-shadow: 2px 2px 3px var(--color-n2);
+    margin-left: 50px;
 }
- 
-.designimg{
-    margin-top: 30px;
-}
-.designimg ul{
+ .designimg ul{
     display: flex;
     text-align: center;
     justify-content: center;
     list-style: none;
     height: 500px;
-     
+ 
+  
 }
 .designimg ul li {
     position: relative;
@@ -612,7 +437,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.3);
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -627,6 +452,7 @@ body{
 .designimg2,
 .designimg3{
     width: 300px;
+    opacity: 0.9;
 }
 .designimgA:hover .designtext,
 .designimgB:hover .designtextb,
@@ -684,13 +510,35 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
+
 .designp{
     color: var(--color-n2);
 }
+.hidden .step {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  .show .step {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.2s ease-out, transform 0.5s ease-out;
+  }
+  
+  .show .step:nth-child(1) {
+    transition-delay: 0s;
+  }
+  .show .step:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  .show .step:nth-child(3) {
+    transition-delay: 0.6s;
+  }
 .minall{
     margin: 50px 0;
-}
+ }
 .detailtxt,
 .minimgtxt,
 .minimgXtxt{
@@ -703,18 +551,6 @@ body{
     margin-bottom: 20px;
 }
  
-.left{
-    flex-grow: 1; /* 선이 텍스트 양옆으로 길게 확장되도록 */
-    border: none;
-    border-top: 2px solid var(--color-n2); /* 선 두께와 색상 설정 */
-    margin-right: 10px; /* 텍스트와 선 사이의 간격 */
-}
-.right {
-    flex-grow: 1; /* 오른쪽 선도 텍스트 양옆으로 길게 확장되도록 */
-    border: none;
-    border-top: 2px solid var(--color-n2); /* 선 두께와 색상 설정 */
-    margin-left: 10px;  
-}
 .detailtxt span,
 .minimgtxt span,
 .minimgXtxt span{
@@ -723,7 +559,7 @@ body{
     text-shadow: 0 1px 1px black;
 }
 .minimg{
-    margin: 20px 0;
+    margin-top: 20px;
 }
 .minimg ul{
     display: flex;
@@ -736,10 +572,20 @@ body{
     margin: 0 20px; 
 }
 .minimg img{
- 
     width: 250px;
     height: 280px;
+    opacity: 0.9;
 }
+.minimg-hidden .mini-step {
+    opacity: 0;
+}
+  
+  /* 등장 상태: 모든 이미지가 동시에 나타남 */
+  .minimg-show .mini-step {
+    opacity: 1;
+    transition: opacity 0.7s ease-out;
+  }
+
 .minimgX{
     display: flex;
     justify-content: center;
@@ -747,55 +593,95 @@ body{
 .minimgX ul li{
     list-style: none;
     margin: 10px 0;
+  opacity: 0; /* 초기 상태: 투명 */
+  transform: translateX(50px); /* 초기 위치 아래로 */
+  transition: opacity 0.2s ease-out, transform 0.7s ease-out;
+}
+
+/* 계단식으로 이미지가 하나씩 나타나게 */
+.minimgX-show ul li:nth-child(1) {
+  transition-delay: 0s;
+}
+.minimgX-show ul li:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.minimgX-show ul li:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+/* 애니메이션이 끝난 후 보이게 하도록 */
+.minimgX-show ul li {
+  opacity: 1;
+  transform: translateX(0);
 }
 /* contact */
-#contact_all{
-    background: var(--color-n2);
+#contact_all {
     width: 100%;
-    margin-top: 50px;
-    padding:70px;
-}
-.contacttitle{
+    padding: 70px;
+  }
+  
+  .contacttitle {
     margin-bottom: 30px;
-}
-.contacttitle p{
-    font-size: var(--font-title2);
+  }
+  .contacttitle p {
+    font-size:30px;
     color: var(--color-n1);
-}
-.contacttitle :nth-child(2){
-    font-size: var(--font-projectsub);
+  }
+  .contacttitle :nth-child(2) {
+    font-size: var(--font-projectsubsub);
     color: var(--color-n1);
     margin-top: 5px;
-}
-.contact_id{
-    margin-top:50px;
-}
-.contact_mail{
-    font-size: var(--font-title2);
+  }
+  
+  .contact_id {
+    margin-top: 50px;
+  }
+  .contact_mail {
     display: flex;
     align-items: center;
-    color: var(--color-n4);
-    text-shadow: 2px 2px 3px var(--color-n2);
     margin-bottom: 5px;
-}
-.contact_mail i{
-    margin-top: 10px;
-    margin-right: 15px;
-    color: var(--color-n4);    
-}
-.contact_mail p{
+  }
+  .contact_mail p {
     cursor: pointer;
-    font-weight: 500;
-    font-size: var(--font-title2);
-    text-shadow: 2px 2px 3px var(--color-n2);
-}
-.contact_mail p:hover{
-    background-image:linear-gradient(85deg, #F4EDD3 40%,#4C585B 100%);
-    -webkit-background-clip: text; /* 텍스트에만 배경을 적용 */
-    color: transparent; /* 텍스트 색상을 투명하게 설정 */
-}
-.contact_idtext p{
+    font-weight: 400;
+    align-items: center;
+    font-size:4.3rem;
+    color: var(--color-n3);
+    text-shadow: 2px 2px 3px var(--color-n1);
+  }
+  #copyText:hover{
+    color: var(--color-n1);
+    transition: all 0.5s ease-out;
+  }
+  .contact_idtext p {
     margin-top: 5px;
     color: var(--color-n1);
-    font-size: var(--font-projectsub);
-} 
+    font-size: var(--font-projectsubsub);
+  }
+  
+  /* 추가된 애니메이션 스타일 */
+  .hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .wave span {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(10px);
+    animation: waveFade 0.6s forwards;
+  }
+  
+  @keyframes waveFade {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

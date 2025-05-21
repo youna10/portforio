@@ -95,172 +95,7 @@ const profileElements = document.querySelectorAll('.profile_all, .myimg');
 profileElements.forEach(element => {
   observer.observe(element);
 });
-
-window.addEventListener('DOMContentLoaded', function() {
-  showContent('Z');
-  checkWindowSize(); // 초기 화면 크기 체크
-});
-
-// 화면 크기에 따라 콘텐츠 표시
-window.addEventListener('resize', function() {
-  checkWindowSize(); // 화면 크기 변경 시 체크
-});
-
-function checkWindowSize() {
-  if (window.innerWidth <= 1194) {
-    // 화면 너비가 950px 이하일 때는 모든 콘텐츠 보이기
-    document.getElementById("contentZ").style.display = "flex";
-    document.getElementById("contentA").style.display = "flex";
-    document.getElementById("contentB").style.display = "flex";
-    document.getElementById("contentC").style.display = "flex";
-    document.getElementById("contentD").style.display = "flex";
-    document.getElementById("contentE").style.display = "flex";
-  } else {
-    showContent('Z'); 
-   }
-}
-
-function showContent(content) {
-  var contentZ = document.getElementById("contentZ");
-  var contentA = document.getElementById("contentA");
-  var contentB = document.getElementById("contentB");
-  var contentC = document.getElementById("contentC");
-  var contentD = document.getElementById("contentD");
-
-
-  // 내용 숨김
-  contentZ.style.display = "none";
-  contentA.style.display = "none";
-  contentB.style.display = "none";
-  contentC.style.display = "none";
-  contentD.style.display = "none";
-
-
-  // 선택한 내용 보이기
-  if (content === "Z") {
-    contentZ.style.display = "flex";
-  } else if (content === "A") {
-    contentA.style.display = "flex";
-  } else if (content === "B") {
-    contentB.style.display = "flex";
-  } else if (content === "C") {
-    contentC.style.display = "flex";
-  } else if (content === "D") {
-    contentD.style.display = "flex";
-  }
-}
-const openModalBtnZ = document.getElementById("button1Z");
-const modalZ = document.getElementById("myModalZ");
-const closeModalBtnZ = document.getElementById("closeModalBtnZ");
-const modalImageZ = document.getElementById("modalImageZ");
-
-// 버튼 클릭 시 모달 열기
-openModalBtnZ.onclick = function() {
-  modalZ.style.display = "block"; // 모달을 보이게 설정
-}
-
-// 닫기 버튼 클릭 시 모달 닫기
-closeModalBtnZ.onclick = function() {
-  modalZ.style.display = "none"; // 모달을 숨기게 설정
-}
-
-// 모달 밖을 클릭하면 모달 닫기
-window.onclick = function(event) {
-  if (event.target === modalZ) {
-    modalZ.style.display = "none"; // 모달을 숨기게 설정
-  }
-};
-
-    const openModalBtn = document.getElementById("button1A");
-    const modalA = document.getElementById("myModalA");
-    const closeModalBtn = document.getElementById("closeModalBtnA");
-    const modalImage = document.getElementById("modalImageA");
-
-    // 버튼 클릭 시 모달 열기
-    openModalBtn.onclick = function() {
-      modalA.style.display = "block"; // 모달을 보이게 설정
-    }
-
-    // 닫기 버튼 클릭 시 모달 닫기
-    closeModalBtn.onclick = function() {
-      modalA.style.display = "none"; // 모달을 숨기게 설정
-    }
-
-    // 모달 밖을 클릭하면 모달 닫기
-    window.onclick = function(event) {
-      if (event.target === modalA) {
-        modalA.style.display = "none"; // 모달을 숨기게 설정
-      }
-    };
-
-    const openModalBtnB = document.getElementById("button1B");
-    const modalB = document.getElementById("myModalB");
-    const closeModalBtnB = document.getElementById("closeModalBtnB");
-    const modalImageB = document.getElementById("modalImageB");
-
-    // 버튼 클릭 시 모달 열기
-    openModalBtnB.onclick = function() {
-      modalB.style.display = "block"; // 모달을 보이게 설정
-    }
-
-    // 닫기 버튼 클릭 시 모달 닫기
-    closeModalBtnB.onclick = function() {
-      modalB.style.display = "none"; // 모달을 숨기게 설정
-    }
-
-    // 모달 밖을 클릭하면 모달 닫기
-    window.onclick = function(event) {
-      if (event.target === modalB) {
-        modalB.style.display = "none"; // 모달을 숨기게 설정
-      }
-    };
-    
  
-    const openModalBtnC = document.getElementById("button1C");
-    const modalC = document.getElementById("myModalC");
-    const closeModalBtnC = document.getElementById("closeModalBtnC");
-    const modalImageC = document.getElementById("modalImageC");
-
-    // 버튼 클릭 시 모달 열기
-    openModalBtnC.onclick = function() {
-      modalC.style.display = "block"; // 모달을 보이게 설정
-    }
-
-    // 닫기 버튼 클릭 시 모달 닫기
-    closeModalBtnC.onclick = function() {
-      modalC.style.display = "none"; // 모달을 숨기게 설정
-    }
-
-    // 모달 밖을 클릭하면 모달 닫기
-    window.onclick = function(event) {
-      if (event.target === modalC) {
-        modalC.style.display = "none"; // 모달을 숨기게 설정
-      }
-    };
-
-    const openModalBtnD = document.getElementById("button1D");
-    const modalD = document.getElementById("myModalD");
-    const closeModalBtnD = document.getElementById("closeModalBtnD");
-    const modalImageD = document.getElementById("modalImageD");
-
-    // 버튼 클릭 시 모달 열기
-    openModalBtnD.onclick = function() {
-      modalD.style.display = "block"; // 모달을 보이게 설정
-    }
-
-    // 닫기 버튼 클릭 시 모달 닫기
-    closeModalBtnD.onclick = function() {
-      modalD.style.display = "none"; // 모달을 숨기게 설정
-    }
-
-    // 모달 밖을 클릭하면 모달 닫기
-    window.onclick = function(event) {
-      if (event.target === modalD) {
-        modalD.style.display = "none"; // 모달을 숨기게 설정
-      }
-    };
-    
-
     // 디자인 이미지 클릭 시 모달 열기
   const designLinks = document.querySelectorAll('.designimgA, .designimgB, .designimgC');
   const desmodal = document.getElementById('desmyModal');
@@ -311,4 +146,100 @@ document.getElementById('copyText').addEventListener('click', function() {
   
   // 복사 완료 메시지
   alert('텍스트가 복사되었습니다!');
+});
+
+const scrollObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+
+      // contact_mail에 파도타기 효과 실행 (1회만)
+      if (entry.target.id === 'contactMail' && !entry.target.classList.contains('animated')) {
+        waveTextAnimation(document.getElementById('copyText'));
+        entry.target.classList.add('animated');
+      }
+    }
+  });
+}, {
+  threshold: 0.8
+});
+
+// .hidden 클래스가 있는 요소 감지 시작
+document.querySelectorAll('.hidden').forEach(el => scrollObserver.observe(el));
+
+// 파도타기 텍스트 애니메이션 함수
+function waveTextAnimation(element) {
+  const text = element.innerText;
+  element.innerHTML = ''; // 초기화
+
+  text.split('').forEach((char, index) => {
+    const span = document.createElement('span');
+    span.textContent = char;
+    span.style.animationDelay = `${index * 0.05}s`;
+    element.appendChild(span);
+  });
+
+  element.classList.add('wave');
+}
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const galleryObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        // 더 이상 감지할 필요 없으면 해제
+        galleryObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2,
+  });
+
+  const gallerySection = document.getElementById('staggeredGallery');
+  if (gallerySection) {
+    galleryObserver.observe(gallerySection);
+  }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const miniGallery = document.getElementById("miniGallery");
+
+  const minGalleryWatcher = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("minimg-show");
+        entry.target.classList.remove("minimg-hidden");
+        minGalleryWatcher.unobserve(entry.target); // 한 번만 실행
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  if (miniGallery) {
+    minGalleryWatcher.observe(miniGallery);
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const miniGalleryX = document.getElementById("miniGalleryX");
+
+  const miniXWatcher = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("minimgX-show");
+        entry.target.classList.remove("minimgX-hidden");
+        miniXWatcher.unobserve(entry.target); // 한 번만 실행되게
+      }
+    });
+  }, {
+    threshold: 0.3 // 요소가 30% 정도 보이면 실행
+  });
+
+  if (miniGalleryX) {
+    miniXWatcher.observe(miniGalleryX);
+  }
 });
