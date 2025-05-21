@@ -13,12 +13,6 @@
 }
 
 @media(max-width:1194px) {
-    .aboutme,
-    #sectionprofile,
-    #projectall,
-    #designall{
-        margin-left: 10px;
-    }
     header{
         width: 100%;
         top: 0;
@@ -154,6 +148,9 @@
         height: 43px;
      }
     /*project css*/
+    .projectcontact h3{
+        margin: auto;
+    }
     .projecte {
         position: relative;
         left: 8%;
