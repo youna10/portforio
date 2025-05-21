@@ -114,17 +114,20 @@
         margin-top: 50px;
         margin-left: 10%;
     }
-  
+       .myimg img {
+        width: 250px;
+        height: 350px;
+           }
     .profile_title{
         margin-top: 70px;
     }
     .profile_all{
-        background-color: rgba(255, 255, 255, 0.6);
-        box-shadow: 0 10px 10px black;
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 2px 5px var(--color-n1);
         padding: 50px 55px;
         border-radius: 30px; 
         display: grid;
-        grid-template-columns: 200px 350px;
+        grid-template-columns: 200px 340px;
         grid-template-rows: 120px 120px;
         gap: 60px 80px ;
     }
@@ -221,7 +224,7 @@
         background-color:var(--color-n3); 
         border-radius: 50px; 
         margin-bottom: 30px;
-        box-shadow: 0px 2px 5px;
+        box-shadow: 0px 2px 5px var(--color-n2);
         padding: 20px;
     }
     .aboutsub1{
@@ -253,10 +256,9 @@
         opacity: 1;
     }
     .profile_all{
-        border: solid var(--color-n3) 5px;
+       
         margin: auto;
         padding: auto;
-        border-radius: 30px; 
         display: block;
         transform: none; /* 밑에서 위로 오는 효과 */
         

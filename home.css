@@ -33,6 +33,7 @@
     box-sizing: border-box;
     text-decoration: none;
  
+ 
 }
 html{
     width: 100%; 
@@ -215,7 +216,7 @@ body{
     background-color:var(--color-n3); 
     border-radius: 50px; 
     margin-bottom: 30px;
-    box-shadow: 0px 2px 5px;
+    box-shadow: 0px 2px 5px var(--color-n2);
     padding: 25px;
 }
 .aboutsub1{
@@ -260,16 +261,17 @@ body{
     align-items: center;
 } 
 .profile_all{
+    background-color: rgba(255, 255, 255, 0.3);
     font-family: 'NanumSquareRound';
-    padding: 100px 60px;
+    padding: 80px 60px;
     margin: 0 50px;
     display: grid;
     grid-template-columns: 250px 400px;
     grid-template-rows: 100px 100px;
-    gap: 65px 50px;
-    box-shadow: 0px 3px 7px gray;
+    gap: 65px 65px;
+    box-shadow: 0 2px 5px var(--color-n1);
     border-radius: 20px;
-    border: solid var(--color-n3) 5px;
+    border: solid rgb(165, 191, 204,0.3) 3px;
     opacity: 0; /* 초기에는 보이지 않도록 */
     transform: translateX(50px); /* 밑에서 위로 오는 효과 */
     transition: all 0.8s ease-out; /* 부드럽게 이동 */
