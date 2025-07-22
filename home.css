@@ -21,10 +21,11 @@
     --font-project:40px;
     --font-projectsub:22px;
     --font-projectsubsub:18px;
-    --color-n1:#4C585B;
-    --color-n2:#7E99A3;
-    --color-n3:#A5BFCC;
-    --color-n4:#F4EDD3;
+    --color-n1:#333333;
+    --color-n2:#616161;
+    --color-n3:#518071;
+    --color-n4:#f2ecff;
+    --color-main:#5fe36a;
 }
 *{
     margin: 0;
@@ -37,8 +38,6 @@
 }
 html{
     width: 100%; 
-    background: var(--color-n4);
-
     }
 body{
     font-family:  "GowunBatang-Regular",sans-serif;
@@ -54,6 +53,7 @@ body{
     justify-content: space-between;
 }
 .index_all{
+ 
     z-index: 100;
 }
 .index_all ul{
@@ -62,20 +62,18 @@ body{
     font-size: var(--index-font);
 }
 .index_all ul li{
-    margin: 0 30px;
-    padding: 7px 7px;     
+    margin: 0 25px;
+    padding: 7px 7px;
 }
 .index_allul li a{
     padding: 7px 10px; 
     color: var(--color-n1);
     font-weight: 400;
     letter-spacing: 2px;
- 
- 
 }
  
 .index_allul li a:hover{
-    color: var(--color-n2);
+    color: var(--color-n3);
     transition: 0.3s;
 }
 
@@ -89,61 +87,38 @@ body{
     display: none;
 }
 .frist{
-    height: 95vh;
-    position: relative;
-    overflow: hidden;
-     
+    height: 95vh;     
 }
-.mainback img:first-child {
-    position: absolute;
-    top: 0%;
-    left: -10%;
-    width: 120%;
- 
-}
-.mainback img:nth-child(2){
-    position: absolute;
-    top: -55%;
-    left: -28%;
-    width: 100%;
- 
-}
-.maintextimg{
-    margin-top: 35px;
+.mainback{
     display: flex;
-    flex-direction: column;  
-    align-items: center; 
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
-.maintextimg img{
-    opacity: 0;   
-    transform: translateY(30px);  /* 이미지는 아래쪽에서 시작 */
-    animation: slideUp 1s ease-in-out forwards;
-    width: 55%;
-    position: relative;
-    display: block; 
-    margin: 0 auto;
-}
-@keyframes slideUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);  /* 아래쪽에서 시작 */
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);  /* 원래 위치로 이동 */
-    }
-}
-.maintextimg img:nth-child(1) {
-    animation-delay: 0.1s; 
-}
+.mainback img{
+    margin-top: 50px;
+    width: 87%;
 
-.maintextimg img:nth-child(2) {
-    animation-delay: 0.4s;  
 }
-
-.maintextimg img:nth-child(3) {
-    animation-delay: 0.7s;  
+.maintextimg {
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.1s linear;
+ 
+ 
 }
+.maintextimg img {
+    max-width: 105%;
+    height: auto;
+}
+.subtext{
+    position: absolute;
+    bottom:1%;
+}
+ 
 /* header end*/
 
 /* 큰 제목*/
@@ -176,7 +151,7 @@ body{
 .abouttitle{
     font-size: var(--font-title);
     color: var(--color-n1);
-    text-shadow: 2px 2px 3px var(--color-n3);
+    text-shadow: 0px 3px 2px var(--color-n2);
 }
 .abouttext{
     display: flex;
@@ -190,7 +165,7 @@ body{
     margin-top: 5px;
     width: 55%; 
     font-size: 1.4rem;
-    color: var(--color-n2);
+    color: var(--color-n3);
 }
 .abouttext.show .about{
     opacity: 1;
@@ -213,10 +188,10 @@ body{
 }
 .aboutsub1,
 .aboutsub2{
-    background-color:var(--color-n3); 
+    background-color :#e4e4d0;
     border-radius: 50px; 
     margin-bottom: 30px;
-    box-shadow: 0px 2px 5px var(--color-n2);
+    box-shadow: 0px 1px 3px var(--color-n2);
     padding: 25px;
 }
 .aboutsub1{
@@ -248,12 +223,12 @@ body{
 .profile_title h3{
     font-size: var(--font-title);
     color: var(--color-n1);
-    text-shadow:2px 2px 3px var(--color-n3);
+    text-shadow: 0px 3px 2px var(--color-n2);
 }
 
 .profile_title p{
     font-size: var(--font-projectsubsub);
-    color: var(--color-n2);
+    color: var(--color-n3);
 } 
 .profile{
     display: flex;
@@ -269,9 +244,9 @@ body{
     grid-template-columns: 250px 400px;
     grid-template-rows: 100px 100px;
     gap: 65px 65px;
-    box-shadow: 0 2px 5px var(--color-n1);
+    box-shadow: 0 1px 2px var(--color-n1);
     border-radius: 20px;
-    border: solid rgb(165, 191, 204,0.3) 3px;
+    border: solid var(--color-n1) 3px;
     opacity: 0; /* 초기에는 보이지 않도록 */
     transform: translateX(50px); /* 밑에서 위로 오는 효과 */
     transition: all 0.8s ease-out; /* 부드럽게 이동 */
@@ -326,13 +301,14 @@ body{
  /*project*/
  #projectcontact{
     margin-top: 80px;
+    padding: 20px 0;
  }
 
  #projectcontact h3{
     margin-left:50px;
     font-size: var(--font-title);
     color: var(--color-n1);
-    text-shadow: 2px 2px 3px var(--color-n3);
+    text-shadow: 0px 3px 2px var(--color-n2);
  }
 .fristproject,
 .secondproject{
@@ -360,9 +336,8 @@ body{
 .fristproject img,
 .secondproject img,
 .finalproject img{ 
-     
+    border: 1px solid rgb(128, 128, 128,0.3);
     border-radius: 30px;
-   
 }
 .projecte {
     position: relative;
@@ -405,14 +380,13 @@ body{
 #designall{
     margin-top: 100px;
     padding-bottom: 50px;
-    background-color: var(--color-n1);
+ 
 }
 .design{
-    
     padding-top: 15px;
     font-size: var(--font-title);
-    color: var(--color-n4);
-    text-shadow: 2px 2px 3px var(--color-n2);
+    color: var(--color-n1);
+    text-shadow: 0px 3px 2px var(--color-n2);
     margin-left: 50px;
 }
  .designimg ul{
@@ -620,6 +594,7 @@ body{
 #contact_all {
     width: 100%;
     padding: 70px;
+    background-color: #e4e4d0;
   }
   
   .contacttitle {

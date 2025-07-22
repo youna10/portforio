@@ -243,3 +243,23 @@ document.addEventListener("DOMContentLoaded", function () {
     miniXWatcher.observe(miniGalleryX);
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mainTextImg = document.querySelector(".maintextimg");
+  const maxScroll = 150;
+
+  function updateOpacity() {
+    let scrollY = window.scrollY;
+    let opacity = 1 - scrollY / maxScroll;
+
+    if (opacity < 0) opacity = 0;
+    if (opacity > 1) opacity = 1;
+
+    mainTextImg.style.opacity = opacity;
+  }
+
+  // 처음 로딩 시 바로 호출
+  updateOpacity();
+
+  window.addEventListener("scroll", updateOpacity);
+});
