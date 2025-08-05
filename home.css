@@ -28,6 +28,7 @@
     --color-main:#5fe36a;
 }
 *{
+    
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -43,6 +44,7 @@ body{
     font-family:  "GowunBatang-Regular",sans-serif;
     cursor: default;
     caret-color: transparent;
+    background-color: #fffde9;
 }
 /* header*/
 
@@ -188,7 +190,7 @@ body{
 }
 .aboutsub1,
 .aboutsub2{
-    background-color :#e4e4d0;
+    background-color :#d6dec5;
     border-radius: 50px; 
     margin-bottom: 30px;
     box-shadow: 0px 1px 3px var(--color-n2);
@@ -246,7 +248,7 @@ body{
     gap: 65px 65px;
     box-shadow: 0 1px 2px var(--color-n1);
     border-radius: 20px;
-    border: solid var(--color-n1) 3px;
+    border: solid #acbfa5 3px;
     opacity: 0; /* 초기에는 보이지 않도록 */
     transform: translateX(50px); /* 밑에서 위로 오는 효과 */
     transition: all 0.8s ease-out; /* 부드럽게 이동 */
@@ -594,7 +596,7 @@ body{
 #contact_all {
     width: 100%;
     padding: 70px;
-    background-color: #e4e4d0;
+    background-color: #d6dec5;
   }
   
   .contacttitle {
