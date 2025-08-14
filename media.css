@@ -173,7 +173,7 @@
     #sectionprofile,
     #projectall,
     #designall{
-        margin-left: auto;
+        margin-left: 3px;
        
     }
   .frist{
@@ -210,6 +210,7 @@
 }
     .iconmouse{
         bottom: auto;
+        margin-bottom: 50px;
     }
     .about{
         opacity: 1;
@@ -265,11 +266,12 @@
       }
     .profile img{
         margin-left: 30%;
-        width: 160px;
-        height: 180px;
+        width: 162px;
+        height: 205px;
     }
     .myimg{
         opacity: 0; /* 초기에는 보이지 않도록 */
+        margin-bottom: 10px;
         transform: none;/* 밑에서 위로 오는 효과 */
     }
     .myimg.active{
@@ -277,7 +279,7 @@
     }
     .profile_all{
        
-        margin: auto;
+        margin: auto 10px;
         padding: auto;
         display: block;
         transform: none; /* 밑에서 위로 오는 효과 */
@@ -368,6 +370,9 @@
         display: block;
         align-items: center;
         justify-content: center;  
+    }
+    .minimgX{
+        margin: 0 10px;
     }
     .minimgX img{
         width: 100%;
