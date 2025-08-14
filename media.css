@@ -55,7 +55,7 @@
    .index_allul{
         position: absolute;
         flex-direction: column;
-        top: 50%;
+        top: 47%;
         text-align: left;
    }
    .index_allul li{
@@ -180,6 +180,7 @@
     padding-top: 150px;
     height: 95vh;     
 }
+ 
 .mainback{
     display: flex;
     justify-content: center;
