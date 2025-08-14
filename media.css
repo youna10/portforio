@@ -16,7 +16,7 @@
 @media(max-width:1194px) {
     header{
         width: 100%;
-        background-color: white;
+        background-color: #fffde9;
         top: 0;
         position: fixed;
         display: flex;
