@@ -409,7 +409,8 @@ body{
 }
 .designtext,
 .designtextb,
-.designtextc{
+.designtextc,
+.designtextD{
     position: absolute;
     top: 0;
     left: 0;
@@ -428,19 +429,22 @@ body{
 }
 .designimg1,
 .designimg2,
-.designimg3{
-    width: 300px;
+.designimg3,
+.designimg4{
+    width: 270px;
     opacity: 0.9;
 }
 .designimgA:hover .designtext,
 .designimgB:hover .designtextb,
-.designimgC:hover .designtextc{
+.designimgC:hover .designtextc,
+.designimgD:hover .designtextD{
     opacity: 1; 
     
 }
 .designimgA:hover .designimg1,
 .designimgB:hover .designimg2,
-.designimgC:hover .designimg3{
+.designimgC:hover .designimg3,
+.designimgD:hover .designimg4{
     opacity: 1; 
     transform: scale(1.02); /* 이미지가 조금 커짐 */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* 입체감 있는 그림자 추가 */
@@ -459,8 +463,8 @@ body{
 
   .desmodal-content-container {
     margin: auto;
-    max-width: 55%;
-    max-height: 90vh;
+    max-width: 47%;
+    max-height: 95vh;
     border-radius: 10px;
     overflow-y: auto; /* 세로 스크롤 */
     overflow-x: hidden;
@@ -513,6 +517,9 @@ body{
   }
   .show .step:nth-child(3) {
     transition-delay: 0.6s;
+  }
+    .show .step:nth-child(4) {
+    transition-delay: 0.9s;
   }
 .minall{
     margin: 50px 0;
