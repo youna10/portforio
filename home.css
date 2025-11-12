@@ -166,7 +166,8 @@ body{
 .about h3{
     margin-top: 5px;
     width: 55%; 
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 200;
     color: var(--color-n3);
 }
 .abouttext.show .about{
@@ -186,6 +187,7 @@ body{
 }
 .aboutsub p{
     font-size: var(--font-projectsubsub);
+    margin-left: 10px;
     color: var(--color-n1);
 }
 .aboutsub1,
@@ -230,6 +232,7 @@ body{
 
 .profile_title p{
     font-size: var(--font-projectsubsub);
+    font-weight: 300;
     color: var(--color-n3);
 } 
 .profile{
@@ -383,6 +386,7 @@ body{
     margin-top: 100px;
     padding-bottom: 50px;
  
+ 
 }
 .design{
     padding-top: 15px;
@@ -390,6 +394,7 @@ body{
     color: var(--color-n1);
     text-shadow: 0px 3px 2px var(--color-n2);
     margin-left: 50px;
+    margin-bottom: 70px;
 }
  .designimg ul{
     display: flex;
@@ -496,7 +501,10 @@ body{
 }
 
 .designp{
-    color: var(--color-n2);
+    color: rgb(97, 97, 97,0.8);
+    opacity: 0.7;
+    font-weight: 100;
+    letter-spacing:1.5px;
 }
 .hidden .step {
     opacity: 0;
@@ -540,8 +548,8 @@ body{
 .minimgtxt span,
 .minimgXtxt span{
     color: var(--color-n2);
-    font-size: var(--font-project);
-    text-shadow: 0 1px 1px black;
+    font-size: 30px;
+  
 }
 .minimg{
     margin-top: 20px;
@@ -611,11 +619,11 @@ body{
   }
   .contacttitle p {
     font-size:30px;
-    color: var(--color-n1);
+    color: rgb(51, 51, 51,0.8);;
   }
   .contacttitle :nth-child(2) {
     font-size: var(--font-projectsubsub);
-    color: var(--color-n1);
+    color: rgb(51, 51, 51,0.8);
     margin-top: 5px;
   }
   
@@ -641,7 +649,7 @@ body{
   }
   .contact_idtext p {
     margin-top: 5px;
-    color: var(--color-n1);
+    color: rgb(51, 51, 51,0.8);
     font-size: var(--font-projectsubsub);
   }
   
