@@ -329,29 +329,43 @@
     }
  
     .fristproject img,
-    .secondproject img,
-    .finalproject img{ 
+    .secondproject img{ 
         width: 300px;
-        border-radius: 30px;
+        position: relative;
+        left: 10%;
    }
-   .projecte {
-    position: relative;
-    left: 3%;
+    .finalproject img{
+        position: relative;
+        width: 300px;
+        left: 4%;
+    }
+    .projecta p,
+    .projectb p,
+    .projectc p,
+    .projectd p{
+        margin-left: 50px;
+    }
+    .projectd p{
+        width: 75%;
+    }
+    .projecte P{
+        position: relative;
+        left: 2%;
     }
     .projecta,
     .projectb,
     .projectc,
     .projectd{
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
     .secondproject,
     .finalproject{
         margin: auto;
+ 
     }
     .fristproject,
     .secondproject{
         display: block;
- 
         margin-left: 10px;
     }
     /*design*/
