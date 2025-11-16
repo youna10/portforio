@@ -1,11 +1,11 @@
 :root{
-    --media-title:1.5rem;
+    --media-title:1.3rem;
     --media-medium:17px;
     --media-large:20px;
     --media-project:28px;
     --media-projectsub:18px;
     --media-projectsubsub:15px;
-    --media-420title:2.5rem;
+    --media-420title:2rem;
     --color-n1:#333333;
     --color-n2:#616161;
     --color-n3:#518071;
@@ -150,9 +150,7 @@
         display: flex;
         justify-content: right;
     }
-    .skills ul li p:nth-child(2){
-    margin-right: 0px;
-     }
+ 
      .skills ul li img{
         margin: 0 10px;
         width: 43px;
@@ -166,7 +164,21 @@
         position: relative;
         left: 8%;
     }
-
+.designimg1,
+.designimg2,
+.designimg3,
+.designimg4{
+    width: 240px;
+}
+.designimg ul li{
+    margin: 0 15px;
+}
+.abouttitle,
+.profile_title h3,
+#projectcontact h3,
+.design{
+    font-size: 2.2rem;
+}
 }
 @media(max-width:420px) {
     .aboutme,
@@ -222,7 +234,7 @@
     }
     .about h3{
         width: 60%;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: var(--color-n2);
         transform: none;
     }
@@ -295,18 +307,17 @@
     }
     .profile_all ul li p:nth-child(1){
         color: var(--color-n1);
-        font-size: var(--media-medium);
+        font-size: var(--media-projectsubsub);
         font-weight: 700;
      
     }
     .profile_all ul li p:nth-child(2){
         color: var(--color-n1);
+        font-size: var(--media-projectsubsub);
         display: flex;
         justify-content: right;
     }
-    .skills ul li p:nth-child(2){
-     margin-right: 0px;
-     }
+ 
      .skills ul li img{
         width: 35px;
         height: 35px;
@@ -316,10 +327,11 @@
     #projectcontact h3{
         margin: auto;
     }
+ 
     .fristproject img,
     .secondproject img,
     .finalproject img{ 
-        width: 360px;
+        width: 300px;
         border-radius: 30px;
    }
    .projecte {
@@ -339,8 +351,7 @@
     .fristproject,
     .secondproject{
         display: block;
-        align-items: center;
-        justify-content: center;
+ 
         margin-left: 10px;
     }
     /*design*/
@@ -512,7 +523,7 @@
     z-index: 1;
     width: 30px;
     height: 50px;
-    border: 2px solid black;
+    border: 2px solid #797979;
     border-radius: 20px;
 }
 @keyframes Mouse_act {
@@ -537,7 +548,7 @@
     margin-left: -29px;
     width: 60px;
     font-size: 16px;
-    color: black;
+    color: #797979;
     letter-spacing: 0px;
     font-weight: 600;
 }
@@ -547,7 +558,7 @@
     left: 13px;
     width: 4px;
     height: 4px;
-    background:black;
+    background:#797979;
     border-radius: 50%;
     animation: Mouse_act 1s ease-out infinite;
 }

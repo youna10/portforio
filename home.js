@@ -97,7 +97,7 @@ profileElements.forEach(element => {
 });
  
     // 디자인 이미지 클릭 시 모달 열기
-  const designLinks = document.querySelectorAll('.designimgA, .designimgB, .designimgC');
+  const designLinks = document.querySelectorAll('.designimgA, .designimgB, .designimgC, .designimgD');
   const desmodal = document.getElementById('desmyModal');
   const desmodalImage = document.getElementById('desmodalImage');
   const descloseModalBtn = document.getElementById('descloseModalBtn');

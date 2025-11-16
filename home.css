@@ -15,8 +15,8 @@
     unicode-range: U+0020-007F;
 }
 :root{
-    --index-font:1.2rem;
-    --font-title:3.2rem;
+    --index-font:1rem;
+    --font-title:2.7rem;
     --font-title2:2.5rem;
     --font-project:40px;
     --font-projectsub:22px;
@@ -343,6 +343,7 @@ body{
 .finalproject img{ 
     border: 1px solid rgb(128, 128, 128,0.3);
     border-radius: 30px;
+    width: 85%;
 }
 .projecte {
     position: relative;
@@ -437,7 +438,7 @@ body{
 .designimg3,
 .designimg4{
     width: 270px;
-    opacity: 0.9;
+   
 }
 .designimgA:hover .designtext,
 .designimgB:hover .designtextb,
