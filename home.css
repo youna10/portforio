@@ -103,7 +103,7 @@ body{
 
 }
 .maintextimg {
-    margin-top: 10px;
+    margin-top: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -113,12 +113,15 @@ body{
  
 }
 .maintextimg img {
-    max-width: 105%;
+    max-width: 100%;
     height: auto;
 }
 .subtext{
     position: absolute;
     bottom:1%;
+}
+.subtext img{
+    width: 80%;
 }
  
 /* header end*/
